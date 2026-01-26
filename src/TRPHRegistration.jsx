@@ -161,6 +161,29 @@ export default function App() {
     setIsSubmitting(true);
 
     try {
+      // 1) Upload payment proof (required)
+      const file = formData.paymentFile;
+      if (!file) {
+        alert("Please upload proof of payment to proceed.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      const ext = (file.name.split(".").pop() || "bin").toLowerCase();
+      const safeEmail = (formData.email || "unknown")
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9]+/g, "-");
+
+      const filePath = `registrations/${Date.now()}-${safeEmail}.${ext}`;
+
+      const { error: uploadError } = await supabase.storage
+        .from("payment-proofs")
+        .upload(filePath, file, { upsert: false });
+
+      if (uploadError) throw uploadError;
+
+      // 2) Insert application row with the file path
       const payload = {
         status: "pending",
         full_name: formData.fullName,
@@ -172,7 +195,8 @@ export default function App() {
         nominator: formData.nominator,
         cycling_background: formData.cyclingBackground,
         payment_ref: formData.paymentRef || null,
-        has_paid: !!formData.hasPaid,
+        has_paid: true,
+        payment_proof_path: filePath,
         consent_handbook: !!consent.handbook,
         consent_bylaws: !!consent.bylaws,
         consent_conduct: !!consent.conduct,
