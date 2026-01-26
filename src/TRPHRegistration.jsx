@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronRight, ChevronLeft, Check, FileText, Upload, AlertCircle, Menu, X, CheckCircle2 } from 'lucide-react';
+import { supabase } from "./lib/supabaseClient";
 /**
  * TRPH Cycling Club - Membership Application & Onboarding
  * * DESIGN SYSTEM:
@@ -157,17 +158,43 @@ export default function App() {
   };
   const submitApplication = async () => {
     setIsSubmitting(true);
-    
-    // Simulation of API call
-    setTimeout(() => {
-      // Generate a fake ID
-      const newId = `TRPH-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
-      setApplicationId(newId);
-      setIsSubmitting(false);
+
+    try {
+      const payload = {
+        status: "pending",
+        full_name: formData.fullName,
+        email: formData.email,
+        mobile: formData.mobile,
+        city: formData.city,
+        emergency_name: formData.emergencyName,
+        emergency_number: formData.emergencyNumber,
+        nominator: formData.nominator,
+        cycling_background: formData.cyclingBackground,
+        payment_ref: formData.paymentRef || null,
+        has_paid: !!formData.hasPaid,
+        consent_handbook: !!consent.handbook,
+        consent_bylaws: !!consent.bylaws,
+        consent_conduct: !!consent.conduct,
+      };
+
+      const { data, error } = await supabase
+        .from("registrations")
+        .insert(payload)
+        .select("id")
+        .single();
+
+      if (error) throw error;
+
+      setApplicationId(data.id);
       setCurrentStep(8);
       localStorage.removeItem(STORAGE_KEY);
       window.scrollTo(0, 0);
-    }, 1500);
+    } catch (err) {
+      console.error(err);
+      alert("Sorry — submission failed. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   const updateForm = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
