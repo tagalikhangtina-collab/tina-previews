@@ -36,7 +36,8 @@ const INITIAL_FORM_DATA = {
   nominator: '',
   cyclingBackground: '',
   paymentRef: '',
-  hasPaid: false, // simulated file upload state
+  hasPaid: false,
+  paymentFile: null,
 };
 const INITIAL_CONSENT = {
   handbook: false,
@@ -490,9 +491,18 @@ export default function App() {
                           className="hidden" 
                           id="file-upload"
                           onChange={(e) => {
-                            if (e.target.files?.length > 0) {
-                              updateForm('hasPaid', true);
+                            const file = e.target.files?.[0];
+                            if (!file) return;
+                            // 5MB size limit
+                            if (file.size > 5 * 1024 * 1024) {
+                              alert("File too large. Please upload a file under 5MB.");
+                              e.target.value = "";
+                              updateForm("hasPaid", false);
+                              updateForm("paymentFile", null);
+                              return;
                             }
+                            updateForm("paymentFile", file);
+                            updateForm("hasPaid", true);
                           }}
                         />
                         <label htmlFor="file-upload" className={`w-full p-4 border flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-50 transition-colors ${formData.hasPaid ? 'border-green-600 text-green-700 bg-green-50' : 'border-gray-300 text-gray-500'}`}>
