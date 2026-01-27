@@ -9,11 +9,12 @@ import { supabase } from "./lib/supabaseClient";
  * - Step-based progression
  */
 // --- Constants & Config ---
-const TOTAL_STEPS = 8;
+const TOTAL_STEPS = 9;
 const STORAGE_KEY = 'trph_onboarding_state';
 const LINKS = {
   handbook: '/docs/TRPH_Cycling_Club_Handbook.pdf',
   conduct: '/docs/TRPH_Code_of_Conduct.pdf',
+  privacy: '/docs/TRPH_Data_Privacy_Notice.pdf',
 };
 const STEPS_INFO = [
   { id: 1, title: 'Welcome' },
@@ -22,8 +23,9 @@ const STEPS_INFO = [
   { id: 4, title: 'Governance' },
   { id: 5, title: 'Conduct' },
   { id: 6, title: 'Acknowledgment' },
-  { id: 7, title: 'Application' },
-  { id: 8, title: 'Next Steps' },
+  { id: 7, title: 'Data Privacy' },
+  { id: 8, title: 'Application' },
+  { id: 9, title: 'Next Steps' },
 ];
 const INITIAL_FORM_DATA = {
   fullName: '',
@@ -36,6 +38,7 @@ const INITIAL_FORM_DATA = {
   cyclingBackground: '',
   paymentRef: '',
   hasPaid: false,
+  feeWaiverRequested: false,
   paymentFile: null,
 };
 const INITIAL_CONSENT = {
@@ -96,7 +99,9 @@ export default function App() {
   const [consent, setConsent] = useState(INITIAL_CONSENT);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [applicationId, setApplicationId] = useState(null);
-  const [isReviewing, setIsReviewing] = useState(false); // Sub-state for Step 7
+  const [showFullPrivacy, setShowFullPrivacy] = useState(false);
+  const [consentPrivacy, setConsentPrivacy] = useState(false);
+  const [isReviewing, setIsReviewing] = useState(false);
   const [reviewConfirm, setReviewConfirm] = useState({
     infoAccurate: false,
     agreeRules: false,
@@ -108,7 +113,7 @@ export default function App() {
       try {
         const parsed = JSON.parse(savedState);
         // Only restore if valid data exists and we aren't already finished
-        if (parsed.step < 8) {
+        if (parsed.step < 9) {
           setCurrentStep(parsed.step);
           setFormData(parsed.formData || INITIAL_FORM_DATA);
           setConsent(parsed.consent || INITIAL_CONSENT);
@@ -120,7 +125,7 @@ export default function App() {
   }, []);
   // Save state to localStorage on change
   useEffect(() => {
-    if (currentStep < 8) {
+    if (currentStep < 9) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify({
         step: currentStep,
         formData,
@@ -137,7 +142,13 @@ export default function App() {
       }
     }
     if (currentStep === 7) {
-      // Step 7 logic is handled by the form submission handler
+      if (!consentPrivacy) {
+        alert("You must agree to the Data Privacy Consent to proceed.");
+        return;
+      }
+    }
+    if (currentStep === 8) {
+      // Step 8 logic is handled by the form submission handler
       setIsReviewing(true);
       return;
     }
@@ -160,31 +171,40 @@ export default function App() {
     setIsSubmitting(true);
 
     try {
-      // 1) Upload payment proof (required)
-      const file = formData.paymentFile;
-      if (!file) {
-        alert("Please upload proof of payment to proceed.");
-        setIsSubmitting(false);
-        return;
+      const isFeeWaiver = !!formData.feeWaiverRequested;
+
+      // 1) Upload payment proof (required ONLY if no waiver)
+      let filePath = null;
+
+      if (!isFeeWaiver) {
+        const file = formData.paymentFile;
+        if (!file) {
+          alert("Please upload proof of payment to proceed.");
+          setIsSubmitting(false);
+          return;
+        }
+
+        const ext = (file.name.split(".").pop() || "bin").toLowerCase();
+        const safeEmail = (formData.email || "unknown")
+          .toLowerCase()
+          .trim()
+          .replace(/[^a-z0-9]+/g, "-");
+
+        filePath = `registrations/${Date.now()}-${safeEmail}.${ext}`;
+
+        const { error: uploadError } = await supabase.storage
+          .from("payment-proofs")
+          .upload(filePath, file, { upsert: false });
+
+        if (uploadError) throw uploadError;
       }
-
-      const ext = (file.name.split(".").pop() || "bin").toLowerCase();
-      const safeEmail = (formData.email || "unknown")
-        .toLowerCase()
-        .trim()
-        .replace(/[^a-z0-9]+/g, "-");
-
-      const filePath = `registrations/${Date.now()}-${safeEmail}.${ext}`;
-
-      const { error: uploadError } = await supabase.storage
-        .from("payment-proofs")
-        .upload(filePath, file, { upsert: false });
-
-      if (uploadError) throw uploadError;
 
       // 2) Insert application row with the file path
       const payload = {
-        status: "pending",
+        status: isFeeWaiver
+          ? "PENDING_FEE_REVIEW"
+          : "PENDING_PAYMENT_VERIFICATION",
+        fee_waiver_requested: isFeeWaiver,
         full_name: formData.fullName,
         email: formData.email,
         mobile: formData.mobile,
@@ -193,11 +213,20 @@ export default function App() {
         emergency_number: formData.emergencyNumber,
         nominator: formData.nominator,
         cycling_background: formData.cyclingBackground,
-        payment_ref: formData.paymentRef || null,
-        has_paid: true,
-        payment_proof_path: filePath,
+
+        // Payment-related
+        has_paid: isFeeWaiver ? false : true,
+        payment_ref: isFeeWaiver ? null : (formData.paymentRef || null),
+        payment_proof_path: isFeeWaiver ? null : filePath,
+
+        // Consents
         consent_handbook: !!consent.handbook,
         consent_conduct: !!consent.conduct,
+
+        data_privacy_consent: !!consentPrivacy,
+        data_privacy_consented_at: consentPrivacy
+          ? new Date().toISOString()
+          : null,
       };
 
       const { data, error } = await supabase
@@ -209,7 +238,7 @@ export default function App() {
       if (error) throw error;
 
       setApplicationId(data.id);
-      setCurrentStep(8);
+      setCurrentStep(9);
       localStorage.removeItem(STORAGE_KEY);
       window.scrollTo(0, 0);
     } catch (err) {
@@ -374,75 +403,231 @@ export default function App() {
           </div>
         );
       case 7:
+        return (
+          <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <SectionTitle>Data Privacy Consent</SectionTitle>
+
+            <div className="space-y-4 text-sm text-gray-700">
+              <p className="font-bold text-black uppercase">Data Privacy Consent</p>
+
+              <p>
+                TRPH Cycling Club respects your right to data privacy in accordance with the Data Privacy Act of 2012 (RA 10173).
+              </p>
+
+              <p>
+                By submitting this application, you consent to the collection and processing of your personal data for purposes related to
+                membership application evaluation, verification, communication, governance, and compliance with legal and organizational requirements.
+              </p>
+
+              <p>
+                Your personal data will be accessed only by authorized personnel and will not be shared with third parties except when required by law
+                or necessary for legitimate Club operations.
+              </p>
+
+              <p>
+                You have the right to be informed, access, correct, object to processing, and request deletion of your personal data, subject to applicable laws.
+                You may also file a complaint with the National Privacy Commission if your rights are violated.
+              </p>
+
+              <button
+                type="button"
+                className="text-sm font-bold text-black underline underline-offset-4"
+                onClick={() => setShowFullPrivacy((p) => !p)}
+              >
+                👉 {showFullPrivacy ? "Hide full Data Privacy Notice" : "Read more to view the full Data Privacy Notice."}
+              </button>
+
+              {showFullPrivacy && (
+                <div className="bg-gray-50 p-6 border border-gray-200 text-xs text-gray-700 space-y-4 max-h-[420px] overflow-y-auto">
+                  <p className="font-bold text-black uppercase">DATA PRIVACY CONSENT AND NOTICE</p>
+
+                  <p className="font-semibold">TRPH Cycling Club</p>
+
+                  <p>
+                    In compliance with the Data Privacy Act of 2012 (Republic Act No. 10173) and its Implementing Rules and Regulations, TRPH Cycling Club is committed to protecting and respecting your personal data.
+                  </p>
+
+                  <hr className="border-gray-200" />
+
+                  <p className="font-bold">1. Collection of Personal Data</p>
+                  <p>
+                    By proceeding with this application, you acknowledge that TRPH Cycling Club may collect, record, organize, store, update, use, and process the following personal data, as applicable:
+                  </p>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li>Personal identification and contact information (e.g., name, email address, mobile number, city)</li>
+                    <li>Emergency contact details</li>
+                    <li>Membership-related information (e.g., nominator, cycling background)</li>
+                    <li>Payment-related information (e.g., proof of payment uploads)</li>
+                    <li>Any other information voluntarily provided as part of the membership application process</li>
+                  </ul>
+
+                  <hr className="border-gray-200" />
+
+                  <p className="font-bold">2. Purpose of Data Collection and Processing</p>
+                  <p>
+                    Your personal data shall be collected and processed solely for legitimate purposes, including but not limited to:
+                  </p>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li>Evaluating and processing your application for TRPH Cycling Club membership</li>
+                    <li>Verifying eligibility, endorsements, and compliance with Club requirements</li>
+                    <li>Communicating application status, membership matters, and official Club announcements</li>
+                    <li>Maintaining accurate membership records and internal governance documentation</li>
+                    <li>Complying with legal, regulatory, and organizational requirements</li>
+                  </ul>
+                  <p>Your data will not be used for purposes incompatible with those stated above.</p>
+
+                  <hr className="border-gray-200" />
+
+                  <p className="font-bold">3. Data Sharing and Disclosure</p>
+                  <p>
+                    TRPH Cycling Club shall not share, disclose, or transfer your personal data to third parties without your consent, except in the following cases:
+                  </p>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li>When required by law, regulation, subpoena, or lawful order of a government authority</li>
+                    <li>When necessary for internal Club governance and administration (e.g., Officers, authorized administrators)</li>
+                    <li>When necessary to protect the legitimate interests, rights, or safety of TRPH Cycling Club or its members</li>
+                  </ul>
+                  <p>Only authorized personnel shall have access to your personal data.</p>
+
+                  <hr className="border-gray-200" />
+
+                  <p className="font-bold">4. Data Retention</p>
+                  <p>
+                    Your personal data shall be retained only for as long as necessary to fulfill the purposes stated in this notice or as required by applicable laws and regulations.
+                  </p>
+                  <p>
+                    When no longer required, personal data shall be securely disposed of or anonymized in accordance with applicable data protection standards.
+                  </p>
+
+                  <hr className="border-gray-200" />
+
+                  <p className="font-bold">5. Data Security Measures</p>
+                  <p>
+                    TRPH Cycling Club implements reasonable and appropriate organizational, physical, and technical security measures to protect your personal data against unauthorized access, alteration, disclosure, loss, or destruction.
+                  </p>
+
+                  <hr className="border-gray-200" />
+
+                  <p className="font-bold">6. Your Rights as a Data Subject</p>
+                  <p>In accordance with the Data Privacy Act, you have the right to:</p>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li>Be informed about the processing of your personal data</li>
+                    <li>Access your personal data held by TRPH Cycling Club</li>
+                    <li>Object to the processing of your personal data under certain circumstances</li>
+                    <li>Request correction of inaccurate or incomplete data</li>
+                    <li>Request suspension, withdrawal, blocking, or deletion of your personal data, subject to applicable laws</li>
+                    <li>File a complaint with the National Privacy Commission (NPC) if you believe your data privacy rights have been violated</li>
+                  </ul>
+
+                  <hr className="border-gray-200" />
+
+                  <p className="font-bold">7. Consent</p>
+                  <p>
+                    By ticking the checkbox below and submitting this application, you confirm that you have read and understood this Data Privacy Consent and Notice and voluntarily give your explicit consent to the collection, use, processing, and retention of your personal data by TRPH Cycling Club for the purposes stated above.
+                  </p>
+                  <p>
+                    You understand that you may withdraw your consent at any time, subject to applicable laws and the legitimate requirements of TRPH Cycling Club.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <label className="flex items-start gap-4 p-4 border rounded-lg cursor-pointer hover:bg-gray-50 transition-colors mb-4">
+              <div className="relative flex items-center">
+                <input
+                  type="checkbox"
+                  className="peer h-6 w-6 cursor-pointer appearance-none rounded border border-gray-300 shadow-sm checked:bg-black checked:border-black"
+                  checked={consentPrivacy}
+                  onChange={(e) => setConsentPrivacy(e.target.checked)}
+                />
+                <Check className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 text-white pointer-events-none opacity-0 peer-checked:opacity-100" />
+              </div>
+              <span className="text-sm font-medium pt-0.5">
+                I agree to the TRPH Data Privacy Consent and authorize the collection and processing of my personal data.
+              </span>
+            </label>
+
+            <PDFLink title="Data Privacy Notice (PDF)" href={LINKS.privacy} />
+          </div>
+        );
+
+      case 8:
         if (isReviewing) {
           return (
             <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
-               <SectionTitle>Review Application</SectionTitle>
-               <div className="bg-gray-50 p-6 text-sm space-y-4 border border-gray-200">
-                 <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <span className="block text-gray-500 text-xs uppercase">Full Name</span>
-                      <span className="font-medium">{formData.fullName}</span>
+              <SectionTitle>Review Application</SectionTitle>
+              <div className="bg-gray-50 p-6 text-sm space-y-4 border border-gray-200">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <span className="block text-gray-500 text-xs uppercase">Full Name</span>
+                    <span className="font-medium">{formData.fullName}</span>
+                  </div>
+                  <div>
+                    <span className="block text-gray-500 text-xs uppercase">City</span>
+                    <span className="font-medium">{formData.city}</span>
+                  </div>
+                  <div>
+                    <span className="block text-gray-500 text-xs uppercase">Email</span>
+                    <span className="font-medium">{formData.email}</span>
+                  </div>
+                  <div>
+                    <span className="block text-gray-500 text-xs uppercase">Mobile</span>
+                    <span className="font-medium">{formData.mobile}</span>
+                  </div>
+                  <div>
+                    <span className="block text-gray-500 text-xs uppercase">Emergency Contact</span>
+                    <span className="font-medium">{formData.emergencyName} ({formData.emergencyNumber})</span>
+                  </div>
+                  <div>
+                    <span className="block text-gray-500 text-xs uppercase">Nominator</span>
+                    <span className="font-medium">{formData.nominator}</span>
+                  </div>
+                </div>
+                <div className="pt-4 border-t border-gray-200">
+                  <span className="block text-gray-500 text-xs uppercase mb-1">Background</span>
+                  <p className="italic text-gray-700">{formData.cyclingBackground}</p>
+                </div>
+                <div className="pt-4 border-t border-gray-200">
+                  <span className="block text-gray-500 text-xs uppercase mb-1">Membership Fee</span>
+                  {formData.feeWaiverRequested ? (
+                    <div className="flex items-center gap-2 text-yellow-700">
+                      <AlertCircle className="w-4 h-4" />
+                      Fee waiver requested (subject to officer review)
                     </div>
-                    <div>
-                      <span className="block text-gray-500 text-xs uppercase">City</span>
-                      <span className="font-medium">{formData.city}</span>
-                    </div>
-                    <div>
-                      <span className="block text-gray-500 text-xs uppercase">Email</span>
-                      <span className="font-medium">{formData.email}</span>
-                    </div>
-                    <div>
-                      <span className="block text-gray-500 text-xs uppercase">Mobile</span>
-                      <span className="font-medium">{formData.mobile}</span>
-                    </div>
-                    <div>
-                      <span className="block text-gray-500 text-xs uppercase">Emergency Contact</span>
-                      <span className="font-medium">{formData.emergencyName} ({formData.emergencyNumber})</span>
-                    </div>
-                    <div>
-                      <span className="block text-gray-500 text-xs uppercase">Nominator</span>
-                      <span className="font-medium">{formData.nominator}</span>
-                    </div>
-                 </div>
-                 <div className="pt-4 border-t border-gray-200">
-                    <span className="block text-gray-500 text-xs uppercase mb-1">Background</span>
-                    <p className="italic text-gray-700">{formData.cyclingBackground}</p>
-                 </div>
-                 <div className="pt-4 border-t border-gray-200">
-                    <span className="block text-gray-500 text-xs uppercase mb-1">Proof of Payment</span>
+                  ) : (
                     <div className="flex items-center gap-2 text-green-700">
                       <CheckCircle2 className="w-4 h-4" />
-                      Uploaded (Ref: {formData.paymentRef || 'N/A'})
+                      Payment uploaded {formData.paymentRef && `(Ref: ${formData.paymentRef})`}
                     </div>
-                 </div>
-               </div>
-               <div className="space-y-4 pt-4">
-                 <label className="flex items-start gap-3 cursor-pointer">
-                   <input type="checkbox" className="mt-1 h-4 w-4 accent-black" checked={reviewConfirm.infoAccurate}
-                     onChange={(e) =>
-                       setReviewConfirm((p) => ({ ...p, infoAccurate: e.target.checked }))
-                     }
-                   />
-                   <span className="text-xs text-gray-600">I confirm that the information provided is accurate.</span>
-                 </label>
-                 <label className="flex items-start gap-3 cursor-pointer">
-                   <input type="checkbox" className="mt-1 h-4 w-4 accent-black" checked={reviewConfirm.agreeRules}
-                     onChange={(e) =>
-                       setReviewConfirm((p) => ({ ...p, agreeRules: e.target.checked }))
-                     }
-                   />
-                   <span className="text-xs text-gray-600">I agree to comply with all TRPH rules, policies, and standards.</span>
-                 </label>
-               </div>
-               <div className="flex flex-col gap-3">
-                 <Button onClick={submitApplication} disabled={isSubmitting || !reviewConfirm.infoAccurate || !reviewConfirm.agreeRules} className="w-full">
-                   {isSubmitting ? 'Submitting...' : 'Submit Final Application'}
-                 </Button>
-                 <Button variant="text" onClick={() => setIsReviewing(false)} disabled={isSubmitting}>
-                   Edit Information
-                 </Button>
-               </div>
+                  )}
+                </div>
+              </div>
+              <div className="space-y-4 pt-4">
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" className="mt-1 h-4 w-4 accent-black" checked={reviewConfirm.infoAccurate}
+                    onChange={(e) =>
+                      setReviewConfirm((p) => ({ ...p, infoAccurate: e.target.checked }))
+                    }
+                  />
+                  <span className="text-xs text-gray-600">I confirm that the information provided is accurate.</span>
+                </label>
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" className="mt-1 h-4 w-4 accent-black" checked={reviewConfirm.agreeRules}
+                    onChange={(e) =>
+                      setReviewConfirm((p) => ({ ...p, agreeRules: e.target.checked }))
+                    }
+                  />
+                  <span className="text-xs text-gray-600">I agree to comply with all TRPH rules, policies, and standards.</span>
+                </label>
+              </div>
+              <div className="flex flex-col gap-3">
+                <Button onClick={submitApplication} disabled={isSubmitting || !reviewConfirm.infoAccurate || !reviewConfirm.agreeRules} className="w-full">
+                  {isSubmitting ? 'Submitting...' : 'Submit Final Application'}
+                </Button>
+                <Button variant="text" onClick={() => setIsReviewing(false)} disabled={isSubmitting}>
+                  Edit Information
+                </Button>
+              </div>
             </div>
           );
         }
@@ -497,60 +682,88 @@ export default function App() {
               </div>
               <div className="border-t border-black pt-6 mt-8">
                 <h3 className="font-bold text-lg mb-4">Membership Dues Payment</h3>
-                <div className="flex flex-col md:flex-row gap-6 items-center">
-                  <div className="w-full md:w-1/3 aspect-square border border-gray-300 flex items-center justify-center bg-white">
-                    <img src="/images/trph-qr.png"
-                      alt="TRPH Payment QR Code"
-                      className="max-w-full max-h-full object-contain"
+                <label className="flex items-start gap-4 p-4 border rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
+                  <div className="relative flex items-center">
+                    <input
+                      type="checkbox"
+                      className="peer h-6 w-6 cursor-pointer appearance-none rounded border border-gray-300 shadow-sm checked:bg-black checked:border-black"
+                      checked={formData.feeWaiverRequested}
+                      onChange={(e) => {
+                        const checked = e.target.checked;
+                        updateForm("feeWaiverRequested", checked);
+
+                        // If waiver requested, clear payment file state so it won't block submission
+                        if (checked) {
+                          updateForm("hasPaid", false);
+                          updateForm("paymentFile", null);
+                        }
+                      }}
                     />
+                    <Check className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 text-white pointer-events-none opacity-0 peer-checked:opacity-100" />
                   </div>
-                  <div className="flex-1 w-full space-y-4">
-                    <div className="space-y-1">
-                      <label className="text-xs font-bold uppercase">Proof of Payment</label>
-                      <div className="relative">
-                        <input 
-                          type="file" 
-                          accept="image/*,application/pdf"
-                          className="hidden" 
-                          id="file-upload"
-                          onChange={(e) => {
-                            const file = e.target.files?.[0];
-                            if (!file) return;
-                            // 5MB size limit
-                            if (file.size > 5 * 1024 * 1024) {
-                              alert("File too large. Please upload a file under 5MB.");
-                              e.target.value = "";
-                              updateForm("hasPaid", false);
-                              updateForm("paymentFile", null);
-                              return;
-                            }
-                            updateForm("paymentFile", file);
-                            updateForm("hasPaid", true);
-                          }}
+
+                  <span className="text-sm font-medium pt-0.5">
+                    I would like to request an alternative membership fee arrangement, subject to review.
+                  </span>
+                </label>
+                {!formData.feeWaiverRequested && (
+                  <>
+                    <div className="flex flex-col md:flex-row gap-6 items-center">
+                      <div className="w-full md:w-1/3 aspect-square border border-gray-300 flex items-center justify-center bg-white">
+                        <img src="/images/trph-qr.png"
+                          alt="TRPH Payment QR Code"
+                          className="max-w-full max-h-full object-contain"
                         />
-                        <label htmlFor="file-upload" className={`w-full p-4 border flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-50 transition-colors ${formData.hasPaid ? 'border-green-600 text-green-700 bg-green-50' : 'border-gray-300 text-gray-500'}`}>
-                          {formData.hasPaid ? <><CheckCircle2 className="w-5 h-5"/> Uploaded Successfully</> : <><Upload className="w-5 h-5"/> Upload Screenshot/PDF</>}
-                        </label>
+                      </div>
+                      <div className="flex-1 w-full space-y-4">
+                        <div className="space-y-1">
+                          <label className="text-xs font-bold uppercase">Proof of Payment</label>
+                          <div className="relative">
+                            <input 
+                              type="file" 
+                              accept="image/*,application/pdf"
+                              className="hidden" 
+                              id="file-upload"
+                              onChange={(e) => {
+                                const file = e.target.files?.[0];
+                                if (!file) return;
+                                // 5MB size limit
+                                if (file.size > 5 * 1024 * 1024) {
+                                  alert("File too large. Please upload a file under 5MB.");
+                                  e.target.value = "";
+                                  updateForm("hasPaid", false);
+                                  updateForm("paymentFile", null);
+                                  return;
+                                }
+                                updateForm("paymentFile", file);
+                                updateForm("hasPaid", true);
+                              }}
+                            />
+                            <label htmlFor="file-upload" className={`w-full p-4 border flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-50 transition-colors ${formData.hasPaid ? 'border-green-600 text-green-700 bg-green-50' : 'border-gray-300 text-gray-500'}`}>
+                              {formData.hasPaid ? <><CheckCircle2 className="w-5 h-5"/> Uploaded Successfully</> : <><Upload className="w-5 h-5"/> Upload Screenshot/PDF</>}
+                            </label>
+                          </div>
+                        </div>
+                        <div className="space-y-1">
+                          <label className="text-xs font-bold uppercase">Reference Number (Optional)</label>
+                          <input type="text" className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors" 
+                            value={formData.paymentRef} onChange={e => updateForm('paymentRef', e.target.value)} />
+                        </div>
                       </div>
                     </div>
-                    <div className="space-y-1">
-                       <label className="text-xs font-bold uppercase">Reference Number (Optional)</label>
-                       <input type="text" className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors" 
-                         value={formData.paymentRef} onChange={e => updateForm('paymentRef', e.target.value)} />
-                    </div>
-                  </div>
-                </div>
+                  </>
+                )}
               </div>
               <div className="pt-6">
-                <Button type="submit" disabled={!formData.hasPaid} className="w-full">
+                <Button type="submit" disabled={!formData.feeWaiverRequested && !formData.hasPaid} className="w-full">
                   Review Application
                 </Button>
-                {!formData.hasPaid && <p className="text-center text-xs text-red-500 mt-2">Please upload proof of payment to proceed.</p>}
+                {!formData.feeWaiverRequested && !formData.hasPaid && (<p className="text-center text-xs text-red-500 mt-2">Please upload proof of payment to proceed.</p>)}
               </div>
             </form>
           </div>
         );
-      case 8:
+      case 9:
         return (
           <div className="space-y-8 text-center animate-in fade-in zoom-in duration-500 py-10">
             <div className="w-20 h-20 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
@@ -607,18 +820,18 @@ export default function App() {
         {renderStepContent()}
       </main>
       {/* Navigation Footer */}
-      {currentStep < 8 && !isReviewing && (
+      {currentStep < 9 && !isReviewing && (
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-40">
            <div className="max-w-3xl mx-auto flex items-center justify-between">
-              <Button 
-                onClick={handleBack} 
-                variant="text" 
+              <Button
+                onClick={handleBack}
+                variant="text"
                 disabled={currentStep === 1}
                 className={currentStep === 1 ? 'opacity-0' : ''}
               >
                 <ChevronLeft className="w-4 h-4" /> Back
               </Button>
-              {currentStep < 7 && (
+              {currentStep < TOTAL_STEPS - 1 && (
                 <Button onClick={handleNext}>
                   Continue <ChevronRight className="w-4 h-4" />
                 </Button>
