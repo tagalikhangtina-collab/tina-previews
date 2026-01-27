@@ -316,7 +316,7 @@ export default function App() {
           <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
             <SectionTitle>Governance</SectionTitle>
             <div className="prose prose-sm max-w-none text-gray-700">
-              <p className="font-medium text-black">TRPH Cycling Club, Inc. is a non-stock, non-profit corporation registered under Philippine law.</p>
+              <p className="font-medium text-black">TRPH Cycling Club operates as a structured cycling organization governed by its By-Laws and internal policies.</p>
               <ul className="list-disc pl-5 space-y-2">
                 <li>The organization is governed by a <strong>Board of Trustees</strong> and elected <strong>Officers</strong>.</li>
                 <li>Club Members in good standing have voting rights and may hold office.</li>
