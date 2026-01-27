@@ -13,7 +13,6 @@ const TOTAL_STEPS = 8;
 const STORAGE_KEY = 'trph_onboarding_state';
 const LINKS = {
   handbook: '/docs/TRPH_Cycling_Club_Handbook.pdf',
-  bylaws: '/docs/TRPH_Bylaws_SEC_Form_101_NS.pdf',
   conduct: '/docs/TRPH_Code_of_Conduct.pdf',
 };
 const STEPS_INFO = [
