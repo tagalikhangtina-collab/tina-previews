@@ -132,7 +132,7 @@ export default function App() {
   const handleNext = () => {
     // Validation Logic
     if (currentStep === 6) {
-      if (!consent.handbook || !consent.bylaws || !consent.conduct) {
+      if (!consent.handbook || !consent.conduct) {
         alert("You must acknowledge all documents to proceed.");
         return;
       }
@@ -198,7 +198,6 @@ export default function App() {
         has_paid: true,
         payment_proof_path: filePath,
         consent_handbook: !!consent.handbook,
-        consent_bylaws: !!consent.bylaws,
         consent_conduct: !!consent.conduct,
       };
 
@@ -320,13 +319,12 @@ export default function App() {
             <div className="prose prose-sm max-w-none text-gray-700">
               <p className="font-medium text-black">TRPH Cycling Club, Inc. is a non-stock, non-profit corporation registered under Philippine law.</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>The organization is governed by a <strong>Board of Directors</strong> and elected <strong>Officers</strong>.</li>
+                <li>The organization is governed by a <strong>Board of Trustees</strong> and elected <strong>Officers</strong>.</li>
                 <li>Club Members in good standing have voting rights and may hold office.</li>
                 <li>Membership dues, discipline, and appeals are governed strictly by the By-Laws.</li>
-                <li>Amendments to club rules follow formal governance procedures involving membership ratification.</li>
+                <li>Amendments to the By-Laws follow formal governance procedures in accordance with applicable laws and regulations.</li>
               </ul>
             </div>
-            <PDFLink title="TRPH By-Laws (PDF)" href={LINKS.bylaws} />
           </div>
         );
       case 5:
@@ -358,7 +356,6 @@ export default function App() {
             <div className="space-y-4">
               {[
                 { key: 'handbook', label: 'I have read and understood the TRPH Member’s Handbook.' },
-                { key: 'bylaws', label: 'I have read and understood the TRPH By-Laws.' },
                 { key: 'conduct', label: 'I reaffirm my understanding of the TRPH Code of Conduct.' }
               ].map((item) => (
                 <label key={item.key} className="flex items-start gap-4 p-4 border rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
@@ -502,8 +499,11 @@ export default function App() {
               <div className="border-t border-black pt-6 mt-8">
                 <h3 className="font-bold text-lg mb-4">Membership Dues Payment</h3>
                 <div className="flex flex-col md:flex-row gap-6 items-center">
-                  <div className="w-full md:w-1/3 aspect-square bg-gray-200 flex items-center justify-center text-center p-4 border border-dashed border-gray-400">
-                    <span className="text-xs text-gray-500 font-medium">GCash QR Code<br/>(To be provided by TRPH)</span>
+                  <div className="w-full md:w-1/3 aspect-square border border-gray-300 flex items-center justify-center bg-white">
+                    <img src="/images/trph-qr.png"
+                      alt="TRPH Payment QR Code"
+                      className="max-w-full max-h-full object-contain"
+                    />
                   </div>
                   <div className="flex-1 w-full space-y-4">
                     <div className="space-y-1">
@@ -560,7 +560,7 @@ export default function App() {
             <h2 className="text-3xl font-bold uppercase">Application Submitted</h2>
             <div className="max-w-md mx-auto space-y-4">
               <p className="text-gray-600">
-                Your application has been received by the TRPH Board of Directors.
+                Your application has been received by the TRPH Board of Trustees.
               </p>
               <div className="bg-gray-100 p-4 rounded text-sm font-mono border border-gray-300">
                 ID: {applicationId}
