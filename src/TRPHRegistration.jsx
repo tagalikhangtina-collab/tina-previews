@@ -1,6 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronRight, ChevronLeft, Check, FileText, Upload, AlertCircle, Menu, X, CheckCircle2 } from 'lucide-react';
 import { supabase } from "./lib/supabaseClient";
+import citiesPH from "./data/cities_ph.json";
+import nationalities from "./data/nationalities.json";
+import genders from "./data/genders.json";
+import industries from "./data/industries.json";
+import professions from "./data/professions.json";
+
+const CITY_OPTIONS = citiesPH.cities;
+const NATIONALITY_OPTIONS = nationalities.options;
+const GENDER_OPTIONS = genders.genders;
+const INDUSTRY_OPTIONS = industries.industries;
+const PROFESSION_OPTIONS = professions.professions;
+
 /**
  * TRPH Cycling Club - Membership Application & Onboarding
  * * DESIGN SYSTEM:
@@ -28,10 +40,20 @@ const STEPS_INFO = [
   { id: 9, title: 'Next Steps' },
 ];
 const INITIAL_FORM_DATA = {
-  fullName: '',
+  firstName: '',
+  middleName: '',
+  lastName: '',
+  suffix: '',
+  dateOfBirth: '',
+  gender: '',
+  nationality: '',
+  city: '',
   email: '',
   mobile: '',
-  city: '',
+  industry: '',
+  industryOther: '',
+  profession: '',
+  professionOther: '',
   emergencyName: '',
   emergencyNumber: '',
   nominator: '',
@@ -167,6 +189,17 @@ export default function App() {
       window.scrollTo(0, 0);
     }
   };
+  const buildFullName = () => {
+    const parts = [
+      formData.firstName,
+      formData.middleName,
+      formData.lastName,
+      formData.suffix
+    ]
+      .map((s) => (s || "").trim())
+      .filter(Boolean);
+    return parts.join(" ");
+  };
   const submitApplication = async () => {
     setIsSubmitting(true);
 
@@ -205,10 +238,21 @@ export default function App() {
           ? "PENDING_FEE_REVIEW"
           : "PENDING_PAYMENT_VERIFICATION",
         fee_waiver_requested: isFeeWaiver,
-        full_name: formData.fullName,
+        full_name: buildFullName(),
+        first_name: formData.firstName,
+        middle_name: formData.middleName || null,
+        last_name: formData.lastName,
+        suffix: formData.suffix || null,
+        date_of_birth: formData.dateOfBirth,
+        gender: formData.gender,
+        nationality: formData.nationality,
+        city: formData.city,
         email: formData.email,
         mobile: formData.mobile,
-        city: formData.city,
+        industry: formData.industry,
+        industry_other: formData.industry === "Other" ? (formData.industryOther || null) : null,
+        profession: formData.profession,
+        profession_other: formData.profession === "Other" ? (formData.professionOther || null) : null,
         emergency_name: formData.emergencyName,
         emergency_number: formData.emergencyNumber,
         nominator: formData.nominator,
@@ -558,14 +602,30 @@ export default function App() {
               <SectionTitle>Review Application</SectionTitle>
               <div className="bg-gray-50 p-6 text-sm space-y-4 border border-gray-200">
                 <div className="grid grid-cols-2 gap-4">
+                  {/* Row 1: Name (full) */}
+                  <div className="col-span-2">
+                    <span className="block text-gray-500 text-xs uppercase">Name</span>
+                    <span className="font-medium">{buildFullName()}</span>
+                  </div>
+                  {/* Row 2: DOB + Gender */}
                   <div>
-                    <span className="block text-gray-500 text-xs uppercase">Full Name</span>
-                    <span className="font-medium">{formData.fullName}</span>
+                    <span className="block text-gray-500 text-xs uppercase">Date of Birth</span>
+                    <span className="font-medium">{formData.dateOfBirth}</span>
+                  </div>
+                  <div>
+                    <span className="block text-gray-500 text-xs uppercase">Gender</span>
+                    <span className="font-medium">{formData.gender}</span>
+                  </div>
+                  {/* Row 3: Nationality + City */}
+                  <div>
+                    <span className="block text-gray-500 text-xs uppercase">Nationality</span>
+                    <span className="font-medium">{formData.nationality}</span>
                   </div>
                   <div>
                     <span className="block text-gray-500 text-xs uppercase">City</span>
                     <span className="font-medium">{formData.city}</span>
                   </div>
+                  {/* Row 4: Email + Mobile */}
                   <div>
                     <span className="block text-gray-500 text-xs uppercase">Email</span>
                     <span className="font-medium">{formData.email}</span>
@@ -574,9 +634,30 @@ export default function App() {
                     <span className="block text-gray-500 text-xs uppercase">Mobile</span>
                     <span className="font-medium">{formData.mobile}</span>
                   </div>
+                  {/* Row 5: Industry + Profession
+                      - full rows on mobile, halves on desktop */}
+                  <div className="col-span-2 md:col-span-1">
+                    <span className="block text-gray-500 text-xs uppercase">Industry</span>
+                    <span className="font-medium">
+                      {formData.industry === "Other"
+                        ? (formData.industryOther || "Other")
+                        : (INDUSTRY_OPTIONS.find((i) => i.value === formData.industry)?.label || formData.industry)}
+                    </span>
+                  </div>
+                  <div className="col-span-2 md:col-span-1">
+                    <span className="block text-gray-500 text-xs uppercase">Profession</span>
+                    <span className="font-medium">
+                      {formData.profession === "Other"
+                        ? (formData.professionOther || "Other")
+                        : (PROFESSION_OPTIONS.find((p) => p.value === formData.profession)?.label || formData.profession)}
+                    </span>
+                  </div>
+                  {/* Row 6: Emergency + Nominator */}
                   <div>
                     <span className="block text-gray-500 text-xs uppercase">Emergency Contact</span>
-                    <span className="font-medium">{formData.emergencyName} ({formData.emergencyNumber})</span>
+                    <span className="font-medium">
+                      {formData.emergencyName} ({formData.emergencyNumber})
+                    </span>
                   </div>
                   <div>
                     <span className="block text-gray-500 text-xs uppercase">Nominator</span>
@@ -636,26 +717,200 @@ export default function App() {
             <SectionTitle>Membership Application</SectionTitle>
             
             <form onSubmit={(e) => { e.preventDefault(); handleNext(); }} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-1">
-                  <label className="text-xs font-bold uppercase">Full Name</label>
-                  <input required type="text" className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors" 
-                    value={formData.fullName} onChange={e => updateForm('fullName', e.target.value)} />
+              <div className="space-y-6">
+                {/* Row 1: Names (4 columns on desktop) */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">First Name</label>
+                    <input
+                      required
+                      type="text"
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none"
+                      value={formData.firstName}
+                      onChange={(e) => updateForm("firstName", e.target.value)}
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">Middle Name</label>
+                    <input
+                      type="text"
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none"
+                      value={formData.middleName}
+                      onChange={(e) => updateForm("middleName", e.target.value)}
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">Last Name</label>
+                    <input
+                      required
+                      type="text"
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none"
+                      value={formData.lastName}
+                      onChange={(e) => updateForm("lastName", e.target.value)}
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">Suffix</label>
+                    <input
+                      type="text"
+                      placeholder="e.g., Jr., III"
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none"
+                      value={formData.suffix}
+                      onChange={(e) => updateForm("suffix", e.target.value)}
+                    />
+                  </div>
                 </div>
-                <div className="space-y-1">
-                  <label className="text-xs font-bold uppercase">Email Address</label>
-                  <input required type="email" className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors" 
-                    value={formData.email} onChange={e => updateForm('email', e.target.value)} />
+                {/* Row 2: DOB + Gender */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">Date of Birth</label>
+                    <input
+                      type="date"
+                      required
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors"
+                      value={formData.dateOfBirth}
+                      onChange={(e) => updateForm("dateOfBirth", e.target.value)}
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">Gender</label>
+                    <select
+                      required
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors bg-white"
+                      value={formData.gender}
+                      onChange={(e) => updateForm("gender", e.target.value)}
+                    >
+                      <option value="" disabled>Select gender</option>
+                      {GENDER_OPTIONS.map((g) => (
+                        <option key={g.value} value={g.value}>
+                          {g.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
-                <div className="space-y-1">
-                  <label className="text-xs font-bold uppercase">Mobile Number</label>
-                  <input required type="tel" className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors" 
-                    value={formData.mobile} onChange={e => updateForm('mobile', e.target.value)} />
+                {/* Row 3: Nationality + City */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">Nationality</label>
+                    <select
+                      required
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors bg-white"
+                      value={formData.nationality}
+                      onChange={(e) => updateForm("nationality", e.target.value)}
+                    >
+                      <option value="" disabled>Select nationality</option>
+                      {NATIONALITY_OPTIONS.map((n) => (
+                        <option key={n.code} value={n.label}>
+                          {n.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">City of Residence</label>
+                    <select
+                      required
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors bg-white"
+                      value={formData.city}
+                      onChange={(e) => updateForm("city", e.target.value)}
+                    >
+                      <option value="" disabled>Select city / municipality</option>
+                      {CITY_OPTIONS.map((c) => (
+                        <option key={c.value} value={c.label}>
+                          {c.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
-                <div className="space-y-1">
-                  <label className="text-xs font-bold uppercase">City of Residence</label>
-                  <input required type="text" className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors" 
-                    value={formData.city} onChange={e => updateForm('city', e.target.value)} />
+                {/* Row 4: Email + Mobile */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">Email Address</label>
+                    <input
+                      required
+                      type="email"
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors"
+                      value={formData.email}
+                      onChange={(e) => updateForm("email", e.target.value)}
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">Mobile Number</label>
+                    <input
+                      required
+                      type="tel"
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none transition-colors"
+                      value={formData.mobile}
+                      onChange={(e) => updateForm("mobile", e.target.value)}
+                    />
+                  </div>
+                </div>
+                {/* Row 5: Industry & Profession */}
+                <div className="grid md:grid-cols-2 gap-6">
+                  {/* Industry */}
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">Industry</label>
+                    <select
+                      required
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none bg-white"
+                      value={formData.industry}
+                      onChange={(e) => {
+                        const v = e.target.value;
+                        updateForm("industry", v);
+                        if (v !== "Other") updateForm("industryOther", "");
+                      }}
+                    >
+                      <option value="" disabled>Select industry</option>
+                      {INDUSTRY_OPTIONS.map((i) => (
+                        <option key={i.value} value={i.value}>
+                          {i.label}
+                        </option>
+                      ))}
+                    </select>
+                    {formData.industry === "Other" && (
+                      <input
+                        type="text"
+                        required
+                        placeholder="Please specify industry"
+                        className="w-full p-3 border border-gray-300 focus:border-black outline-none mt-2"
+                        value={formData.industryOther}
+                        onChange={(e) => updateForm("industryOther", e.target.value)}
+                      />
+                    )}
+                  </div>
+                  {/* Profession */}
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold uppercase">Profession</label>
+                    <select
+                      required
+                      className="w-full p-3 border border-gray-300 focus:border-black outline-none bg-white"
+                      value={formData.profession}
+                      onChange={(e) => {
+                        const v = e.target.value;
+                        updateForm("profession", v);
+                        if (v !== "Other") updateForm("professionOther", "");
+                      }}
+                    >
+                      <option value="" disabled>Select profession</option>
+                      {PROFESSION_OPTIONS.map((p) => (
+                        <option key={p.value} value={p.value}>
+                          {p.label}
+                        </option>
+                      ))}
+                    </select>
+                    {formData.profession === "Other" && (
+                      <input
+                        type="text"
+                        required
+                        placeholder="Please specify profession"
+                        className="w-full p-3 border border-gray-300 focus:border-black outline-none mt-2"
+                        value={formData.professionOther}
+                        onChange={(e) => updateForm("professionOther", e.target.value)}
+                      />
+                    )}
+                  </div>
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-6 bg-gray-50 p-4 border border-gray-100">
@@ -682,7 +937,7 @@ export default function App() {
               </div>
               <div className="border-t border-black pt-6 mt-8">
                 <h3 className="font-bold text-lg mb-4">Membership Dues Payment</h3>
-                <label className="flex items-start gap-4 p-4 border rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
+                <label className="flex items-start gap-4 p-4 mb-4 border rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
                   <div className="relative flex items-center">
                     <input
                       type="checkbox"

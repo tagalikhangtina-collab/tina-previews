@@ -1,0 +1,16 @@
+{
+  "genders": [
+    {
+      "value": "Male",
+      "label": "Male"
+    },
+    {
+      "value": "Female",
+      "label": "Female"
+    },
+    {
+      "value": "PreferNotToSay",
+      "label": "Prefer not to say"
+    }
+  ]
+}

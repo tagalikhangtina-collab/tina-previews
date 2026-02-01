@@ -1,0 +1,64 @@
+{
+  "industries": [
+    {
+      "value": "InformationTechnology",
+      "label": "Information Technology"
+    },
+    {
+      "value": "FinanceBanking",
+      "label": "Finance & Banking"
+    },
+    {
+      "value": "LegalProfessionalServices",
+      "label": "Legal / Professional Services"
+    },
+    {
+      "value": "Education",
+      "label": "Education"
+    },
+    {
+      "value": "Healthcare",
+      "label": "Healthcare"
+    },
+    {
+      "value": "Manufacturing",
+      "label": "Manufacturing"
+    },
+    {
+      "value": "Construction",
+      "label": "Construction"
+    },
+    {
+      "value": "TransportationLogistics",
+      "label": "Transportation & Logistics"
+    },
+    {
+      "value": "RetailWholesale",
+      "label": "Retail & Wholesale"
+    },
+    {
+      "value": "HospitalityTourism",
+      "label": "Hospitality & Tourism"
+    },
+    {
+      "value": "CorporatePrivate",
+      "label": "Corporate / Private Sector"
+    },
+    {
+      "value": "GovernmentPublic",
+      "label": "Government / Public Sector"
+    },
+    {
+      "value": "SportsRecreation",
+      "label": "Sports & Recreation"
+    },
+    {
+      "value": "EntertainmentMedia",
+      "label": "Entertainment & Media"
+    },
+    {
+      "value": "Other",
+      "label": "Other (please specify)"
+    }
+  ]
+}

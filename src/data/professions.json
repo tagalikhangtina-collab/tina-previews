@@ -1,0 +1,72 @@
+{
+  "professions": [
+    {
+      "value": "Student",
+      "label": "Student"
+    },
+    {
+      "value": "Management",
+      "label": "Management / Corporate Management"
+    },
+    {
+      "value": "Sales",
+      "label": "Sales Representative / Sales Consultant"
+    },
+    {
+      "value": "InsuranceAgent",
+      "label": "Insurance Agent / Insurance Advisor"
+    },
+    {
+      "value": "LegalProfessional",
+      "label": "Lawyer / Legal Professional"
+    },
+    {
+      "value": "Engineer",
+      "label": "Engineer"
+    },
+    {
+      "value": "ITProfessional",
+      "label": "Information Technology Professional"
+    },
+    {
+      "value": "HealthcareProfessional",
+      "label": "Healthcare Professional"
+    },
+    {
+      "value": "Educator",
+      "label": "Educator / Teacher"
+    },
+    {
+      "value": "GovernmentEmployee",
+      "label": "Government Employee"
+    },
+    {
+      "value": "BusinessOwner",
+      "label": "Business Owner / Entrepreneur"
+    },
+    {
+      "value": "Freelancer",
+      "label": "Self-Employed / Freelancer"
+    },
+    {
+      "value": "OperationsAdmin",
+      "label": "Operations / Administrative Staff"
+    },
+    {
+      "value": "SkilledWorker",
+      "label": "Technical / Skilled Worker"
+    },
+    {
+      "value": "ArtistPerformer",
+      "label": "Artist / Performer"
+    },
+    {
+      "value": "Retired",
+      "label": "Retired"
+    },
+    {
+      "value": "Other",
+      "label": "Other (please specify)"
+    }
+  ]
+}

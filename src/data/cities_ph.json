@@ -1,0 +1,5748 @@
+{
+  "cities": [
+    {
+      "value": "ABORLAN",
+      "label": "Aborlan"
+    },
+    {
+      "value": "ABRA DE ILOG",
+      "label": "Abra De Ilog"
+    },
+    {
+      "value": "ABUCAY",
+      "label": "Abucay"
+    },
+    {
+      "value": "ABULUG",
+      "label": "Abulug"
+    },
+    {
+      "value": "ABUYOG",
+      "label": "Abuyog"
+    },
+    {
+      "value": "ADAMS",
+      "label": "Adams"
+    },
+    {
+      "value": "AGDANGAN",
+      "label": "Agdangan"
+    },
+    {
+      "value": "AGLIPAY",
+      "label": "Aglipay"
+    },
+    {
+      "value": "AGNO",
+      "label": "Agno"
+    },
+    {
+      "value": "AGONCILLO",
+      "label": "Agoncillo"
+    },
+    {
+      "value": "AGOO",
+      "label": "Agoo"
+    },
+    {
+      "value": "AGUILAR",
+      "label": "Aguilar"
+    },
+    {
+      "value": "AGUINALDO",
+      "label": "Aguinaldo"
+    },
+    {
+      "value": "AGUTAYA",
+      "label": "Agutaya"
+    },
+    {
+      "value": "AJUY",
+      "label": "Ajuy"
+    },
+    {
+      "value": "AKBAR",
+      "label": "Akbar"
+    },
+    {
+      "value": "AL-BARKA",
+      "label": "Al-Barka"
+    },
+    {
+      "value": "ALABAT",
+      "label": "Alabat"
+    },
+    {
+      "value": "ALABEL",
+      "label": "Alabel"
+    },
+    {
+      "value": "ALAMADA",
+      "label": "Alamada"
+    },
+    {
+      "value": "ALAMINOS",
+      "label": "Alaminos"
+    },
+    {
+      "value": "ALAMINOS CITY",
+      "label": "Alaminos City"
+    },
+    {
+      "value": "ALANGALANG",
+      "label": "Alangalang"
+    },
+    {
+      "value": "ALBUERA",
+      "label": "Albuera"
+    },
+    {
+      "value": "ALBURQUERQUE",
+      "label": "Alburquerque"
+    },
+    {
+      "value": "ALCALA",
+      "label": "Alcala"
+    },
+    {
+      "value": "ALCANTARA",
+      "label": "Alcantara"
+    },
+    {
+      "value": "ALCOY",
+      "label": "Alcoy"
+    },
+    {
+      "value": "ALEGRIA",
+      "label": "Alegria"
+    },
+    {
+      "value": "ALEOSAN",
+      "label": "Aleosan"
+    },
+    {
+      "value": "ALFONSO",
+      "label": "Alfonso"
+    },
+    {
+      "value": "ALFONSO CASTANEDA",
+      "label": "Alfonso Castaneda"
+    },
+    {
+      "value": "ALFONSO LISTA (POTIA)",
+      "label": "Alfonso Lista (Potia)"
+    },
+    {
+      "value": "ALIAGA",
+      "label": "Aliaga"
+    },
+    {
+      "value": "ALICIA",
+      "label": "Alicia"
+    },
+    {
+      "value": "ALILEM",
+      "label": "Alilem"
+    },
+    {
+      "value": "ALIMODIAN",
+      "label": "Alimodian"
+    },
+    {
+      "value": "ALITAGTAG",
+      "label": "Alitagtag"
+    },
+    {
+      "value": "ALLACAPAN",
+      "label": "Allacapan"
+    },
+    {
+      "value": "ALLEN",
+      "label": "Allen"
+    },
+    {
+      "value": "ALMAGRO",
+      "label": "Almagro"
+    },
+    {
+      "value": "ALMERIA",
+      "label": "Almeria"
+    },
+    {
+      "value": "ALOGUINSAN",
+      "label": "Aloguinsan"
+    },
+    {
+      "value": "ALORAN",
+      "label": "Aloran"
+    },
+    {
+      "value": "ALTAVAS",
+      "label": "Altavas"
+    },
+    {
+      "value": "ALUBIJID",
+      "label": "Alubijid"
+    },
+    {
+      "value": "AMADEO",
+      "label": "Amadeo"
+    },
+    {
+      "value": "AMBAGUIO",
+      "label": "Ambaguio"
+    },
+    {
+      "value": "AMLAN (AYUQUITAN)",
+      "label": "Amlan (Ayuquitan)"
+    },
+    {
+      "value": "AMPATUAN",
+      "label": "Ampatuan"
+    },
+    {
+      "value": "AMULUNG",
+      "label": "Amulung"
+    },
+    {
+      "value": "ANAHAWAN",
+      "label": "Anahawan"
+    },
+    {
+      "value": "ANAO",
+      "label": "Anao"
+    },
+    {
+      "value": "ANDA",
+      "label": "Anda"
+    },
+    {
+      "value": "ANGADANAN",
+      "label": "Angadanan"
+    },
+    {
+      "value": "ANGAT",
+      "label": "Angat"
+    },
+    {
+      "value": "ANGELES CITY",
+      "label": "Angeles City"
+    },
+    {
+      "value": "ANGONO",
+      "label": "Angono"
+    },
+    {
+      "value": "ANILAO",
+      "label": "Anilao"
+    },
+    {
+      "value": "ANINI-Y",
+      "label": "Anini-Y"
+    },
+    {
+      "value": "ANTEQUERA",
+      "label": "Antequera"
+    },
+    {
+      "value": "ANTIPAS",
+      "label": "Antipas"
+    },
+    {
+      "value": "CITY OF ANTIPOLO",
+      "label": "Antipolo"
+    },
+    {
+      "value": "APALIT",
+      "label": "Apalit"
+    },
+    {
+      "value": "APARRI",
+      "label": "Aparri"
+    },
+    {
+      "value": "ARACELI",
+      "label": "Araceli"
+    },
+    {
+      "value": "ARAKAN",
+      "label": "Arakan"
+    },
+    {
+      "value": "ARAYAT",
+      "label": "Arayat"
+    },
+    {
+      "value": "ARGAO",
+      "label": "Argao"
+    },
+    {
+      "value": "ARINGAY",
+      "label": "Aringay"
+    },
+    {
+      "value": "ARITAO",
+      "label": "Aritao"
+    },
+    {
+      "value": "AROROY",
+      "label": "Aroroy"
+    },
+    {
+      "value": "ARTECHE",
+      "label": "Arteche"
+    },
+    {
+      "value": "ASINGAN",
+      "label": "Asingan"
+    },
+    {
+      "value": "ASIPULO",
+      "label": "Asipulo"
+    },
+    {
+      "value": "ASTURIAS",
+      "label": "Asturias"
+    },
+    {
+      "value": "ASUNCION (SAUG)",
+      "label": "Asuncion (Saug)"
+    },
+    {
+      "value": "ATIMONAN",
+      "label": "Atimonan"
+    },
+    {
+      "value": "ATOK",
+      "label": "Atok"
+    },
+    {
+      "value": "AURORA",
+      "label": "Aurora"
+    },
+    {
+      "value": "AYUNGON",
+      "label": "Ayungon"
+    },
+    {
+      "value": "BAAO",
+      "label": "Baao"
+    },
+    {
+      "value": "BABATNGON",
+      "label": "Babatngon"
+    },
+    {
+      "value": "BACACAY",
+      "label": "Bacacay"
+    },
+    {
+      "value": "BACARRA",
+      "label": "Bacarra"
+    },
+    {
+      "value": "BACLAYON",
+      "label": "Baclayon"
+    },
+    {
+      "value": "BACNOTAN",
+      "label": "Bacnotan"
+    },
+    {
+      "value": "BACO",
+      "label": "Baco"
+    },
+    {
+      "value": "BACOLOD",
+      "label": "Bacolod"
+    },
+    {
+      "value": "BACOLOD CITY",
+      "label": "Bacolod City"
+    },
+    {
+      "value": "BACOLOD-KALAWI (BACOLOD GRANDE)",
+      "label": "Bacolod-Kalawi (Bacolod Grande)"
+    },
+    {
+      "value": "BACOLOR",
+      "label": "Bacolor"
+    },
+    {
+      "value": "BACONG",
+      "label": "Bacong"
+    },
+    {
+      "value": "BACOOR CITY",
+      "label": "Bacoor City"
+    },
+    {
+      "value": "BACUAG",
+      "label": "Bacuag"
+    },
+    {
+      "value": "BACUNGAN (LEON T. POSTIGO)",
+      "label": "Bacungan (Leon T. Postigo)"
+    },
+    {
+      "value": "BADIAN",
+      "label": "Badian"
+    },
+    {
+      "value": "BADIANGAN",
+      "label": "Badiangan"
+    },
+    {
+      "value": "BADOC",
+      "label": "Badoc"
+    },
+    {
+      "value": "BAGABAG",
+      "label": "Bagabag"
+    },
+    {
+      "value": "BAGAC",
+      "label": "Bagac"
+    },
+    {
+      "value": "BAGAMANOC",
+      "label": "Bagamanoc"
+    },
+    {
+      "value": "BAGANGA",
+      "label": "Baganga"
+    },
+    {
+      "value": "BAGGAO",
+      "label": "Baggao"
+    },
+    {
+      "value": "BAGO CITY",
+      "label": "Bago City"
+    },
+    {
+      "value": "BAGUIO CITY",
+      "label": "Baguio City"
+    },
+    {
+      "value": "BAGULIN",
+      "label": "Bagulin"
+    },
+    {
+      "value": "BAGUMBAYAN",
+      "label": "Bagumbayan"
+    },
+    {
+      "value": "BAIS CITY",
+      "label": "Bais City"
+    },
+    {
+      "value": "BAKUN",
+      "label": "Bakun"
+    },
+    {
+      "value": "BALABAC",
+      "label": "Balabac"
+    },
+    {
+      "value": "BALABAGAN",
+      "label": "Balabagan"
+    },
+    {
+      "value": "BALAGTAS (BIGAA)",
+      "label": "Balagtas (Bigaa)"
+    },
+    {
+      "value": "BALAMBAN",
+      "label": "Balamban"
+    },
+    {
+      "value": "BALANGA CITY",
+      "label": "Balanga City"
+    },
+    {
+      "value": "BALANGIGA",
+      "label": "Balangiga"
+    },
+    {
+      "value": "BALANGKAYAN",
+      "label": "Balangkayan"
+    },
+    {
+      "value": "BALAOAN",
+      "label": "Balaoan"
+    },
+    {
+      "value": "BALASAN",
+      "label": "Balasan"
+    },
+    {
+      "value": "BALATAN",
+      "label": "Balatan"
+    },
+    {
+      "value": "BALAYAN",
+      "label": "Balayan"
+    },
+    {
+      "value": "BALBALAN",
+      "label": "Balbalan"
+    },
+    {
+      "value": "BALENO",
+      "label": "Baleno"
+    },
+    {
+      "value": "BALER",
+      "label": "Baler"
+    },
+    {
+      "value": "BALETE",
+      "label": "Balete"
+    },
+    {
+      "value": "BALIANGAO",
+      "label": "Baliangao"
+    },
+    {
+      "value": "BALIGUIAN",
+      "label": "Baliguian"
+    },
+    {
+      "value": "BALILIHAN",
+      "label": "Balilihan"
+    },
+    {
+      "value": "BALINDONG (WATU)",
+      "label": "Balindong (Watu)"
+    },
+    {
+      "value": "BALINGASAG",
+      "label": "Balingasag"
+    },
+    {
+      "value": "BALINGOAN",
+      "label": "Balingoan"
+    },
+    {
+      "value": "BALIUAG",
+      "label": "Baliuag"
+    },
+    {
+      "value": "BALLESTEROS",
+      "label": "Ballesteros"
+    },
+    {
+      "value": "BALOI",
+      "label": "Baloi"
+    },
+    {
+      "value": "BALUD",
+      "label": "Balud"
+    },
+    {
+      "value": "BALUNGAO",
+      "label": "Balungao"
+    },
+    {
+      "value": "BAMBAN",
+      "label": "Bamban"
+    },
+    {
+      "value": "BAMBANG",
+      "label": "Bambang"
+    },
+    {
+      "value": "BANATE",
+      "label": "Banate"
+    },
+    {
+      "value": "BANAUE",
+      "label": "Banaue"
+    },
+    {
+      "value": "BANAYBANAY",
+      "label": "Banaybanay"
+    },
+    {
+      "value": "BANAYOYO",
+      "label": "Banayoyo"
+    },
+    {
+      "value": "BANGA",
+      "label": "Banga"
+    },
+    {
+      "value": "BANGAR",
+      "label": "Bangar"
+    },
+    {
+      "value": "BANGUED",
+      "label": "Bangued"
+    },
+    {
+      "value": "BANGUI",
+      "label": "Bangui"
+    },
+    {
+      "value": "BANI",
+      "label": "Bani"
+    },
+    {
+      "value": "BANISILAN",
+      "label": "Banisilan"
+    },
+    {
+      "value": "BANNA (ESPIRITU)",
+      "label": "Banna (Espiritu)"
+    },
+    {
+      "value": "BANSALAN",
+      "label": "Bansalan"
+    },
+    {
+      "value": "BANSUD",
+      "label": "Bansud"
+    },
+    {
+      "value": "BANTAY",
+      "label": "Bantay"
+    },
+    {
+      "value": "BANTAYAN",
+      "label": "Bantayan"
+    },
+    {
+      "value": "BANTON",
+      "label": "Banton"
+    },
+    {
+      "value": "BARAS",
+      "label": "Baras"
+    },
+    {
+      "value": "BARBAZA",
+      "label": "Barbaza"
+    },
+    {
+      "value": "BARCELONA",
+      "label": "Barcelona"
+    },
+    {
+      "value": "BARILI",
+      "label": "Barili"
+    },
+    {
+      "value": "BARIRA",
+      "label": "Barira"
+    },
+    {
+      "value": "BARLIG",
+      "label": "Barlig"
+    },
+    {
+      "value": "BAROBO",
+      "label": "Barobo"
+    },
+    {
+      "value": "BAROTAC NUEVO",
+      "label": "Barotac Nuevo"
+    },
+    {
+      "value": "BAROTAC VIEJO",
+      "label": "Barotac Viejo"
+    },
+    {
+      "value": "BAROY",
+      "label": "Baroy"
+    },
+    {
+      "value": "BARUGO",
+      "label": "Barugo"
+    },
+    {
+      "value": "BASAY",
+      "label": "Basay"
+    },
+    {
+      "value": "BASCO",
+      "label": "Basco"
+    },
+    {
+      "value": "BASEY",
+      "label": "Basey"
+    },
+    {
+      "value": "BASILISA (RIZAL)",
+      "label": "Basilisa (Rizal)"
+    },
+    {
+      "value": "BASISTA",
+      "label": "Basista"
+    },
+    {
+      "value": "BASUD",
+      "label": "Basud"
+    },
+    {
+      "value": "BATAC CITY",
+      "label": "Batac City"
+    },
+    {
+      "value": "BATAD",
+      "label": "Batad"
+    },
+    {
+      "value": "BATAN",
+      "label": "Batan"
+    },
+    {
+      "value": "BATANGAS CITY",
+      "label": "Batangas City"
+    },
+    {
+      "value": "BATARAZA",
+      "label": "Bataraza"
+    },
+    {
+      "value": "BATO",
+      "label": "Bato"
+    },
+    {
+      "value": "BATUAN",
+      "label": "Batuan"
+    },
+    {
+      "value": "BAUAN",
+      "label": "Bauan"
+    },
+    {
+      "value": "BAUANG",
+      "label": "Bauang"
+    },
+    {
+      "value": "BAUKO",
+      "label": "Bauko"
+    },
+    {
+      "value": "BAUNGON",
+      "label": "Baungon"
+    },
+    {
+      "value": "BAUTISTA",
+      "label": "Bautista"
+    },
+    {
+      "value": "BAY",
+      "label": "Bay"
+    },
+    {
+      "value": "BAYABAS",
+      "label": "Bayabas"
+    },
+    {
+      "value": "BAYAMBANG",
+      "label": "Bayambang"
+    },
+    {
+      "value": "BAYANG",
+      "label": "Bayang"
+    },
+    {
+      "value": "BAYAWAN CITY (TULONG)",
+      "label": "Bayawan City (Tulong)"
+    },
+    {
+      "value": "BAYBAY CITY",
+      "label": "Baybay City"
+    },
+    {
+      "value": "BAYOG",
+      "label": "Bayog"
+    },
+    {
+      "value": "BAYOMBONG",
+      "label": "Bayombong"
+    },
+    {
+      "value": "BAYUGAN CITY",
+      "label": "Bayugan City"
+    },
+    {
+      "value": "BELISON",
+      "label": "Belison"
+    },
+    {
+      "value": "BENITO SOLIVEN",
+      "label": "Benito Soliven"
+    },
+    {
+      "value": "BESAO",
+      "label": "Besao"
+    },
+    {
+      "value": "BIEN UNIDO",
+      "label": "Bien Unido"
+    },
+    {
+      "value": "BILAR",
+      "label": "Bilar"
+    },
+    {
+      "value": "BILIRAN",
+      "label": "Biliran"
+    },
+    {
+      "value": "BINALBAGAN",
+      "label": "Binalbagan"
+    },
+    {
+      "value": "BINALONAN",
+      "label": "Binalonan"
+    },
+    {
+      "value": "CITY OF BIÑAN",
+      "label": "Biñan"
+    },
+    {
+      "value": "BINANGONAN",
+      "label": "Binangonan"
+    },
+    {
+      "value": "BINDOY (PAYABON)",
+      "label": "Bindoy (Payabon)"
+    },
+    {
+      "value": "BINGAWAN",
+      "label": "Bingawan"
+    },
+    {
+      "value": "BINIDAYAN",
+      "label": "Binidayan"
+    },
+    {
+      "value": "BINMALEY",
+      "label": "Binmaley"
+    },
+    {
+      "value": "BINONDO",
+      "label": "Binondo"
+    },
+    {
+      "value": "BINUANGAN",
+      "label": "Binuangan"
+    },
+    {
+      "value": "BIRI",
+      "label": "Biri"
+    },
+    {
+      "value": "BISLIG CITY",
+      "label": "Bislig City"
+    },
+    {
+      "value": "BOAC",
+      "label": "Boac"
+    },
+    {
+      "value": "BOBON",
+      "label": "Bobon"
+    },
+    {
+      "value": "BOCAUE",
+      "label": "Bocaue"
+    },
+    {
+      "value": "BOGO CITY",
+      "label": "Bogo City"
+    },
+    {
+      "value": "BOKOD",
+      "label": "Bokod"
+    },
+    {
+      "value": "BOLINAO",
+      "label": "Bolinao"
+    },
+    {
+      "value": "BOLINEY",
+      "label": "Boliney"
+    },
+    {
+      "value": "BOLJOON",
+      "label": "Boljoon"
+    },
+    {
+      "value": "BOMBON",
+      "label": "Bombon"
+    },
+    {
+      "value": "BONGABON",
+      "label": "Bongabon"
+    },
+    {
+      "value": "BONGABONG",
+      "label": "Bongabong"
+    },
+    {
+      "value": "BONGAO",
+      "label": "Bongao"
+    },
+    {
+      "value": "BONIFACIO",
+      "label": "Bonifacio"
+    },
+    {
+      "value": "BONTOC",
+      "label": "Bontoc"
+    },
+    {
+      "value": "BORBON",
+      "label": "Borbon"
+    },
+    {
+      "value": "BORONGAN CITY",
+      "label": "Borongan City"
+    },
+    {
+      "value": "BOSTON",
+      "label": "Boston"
+    },
+    {
+      "value": "BOTOLAN",
+      "label": "Botolan"
+    },
+    {
+      "value": "BRAULIO E. DUJALI",
+      "label": "Braulio E. Dujali"
+    },
+    {
+      "value": "BROOKE'S POINT",
+      "label": "Brooke'S Point"
+    },
+    {
+      "value": "BUADIPOSO-BUNTONG",
+      "label": "Buadiposo-Buntong"
+    },
+    {
+      "value": "BUBONG",
+      "label": "Bubong"
+    },
+    {
+      "value": "BUCAY",
+      "label": "Bucay"
+    },
+    {
+      "value": "BUCLOC",
+      "label": "Bucloc"
+    },
+    {
+      "value": "BUENAVISTA",
+      "label": "Buenavista"
+    },
+    {
+      "value": "BUGALLON",
+      "label": "Bugallon"
+    },
+    {
+      "value": "BUGASONG",
+      "label": "Bugasong"
+    },
+    {
+      "value": "BUGUEY",
+      "label": "Buguey"
+    },
+    {
+      "value": "BUGUIAS",
+      "label": "Buguias"
+    },
+    {
+      "value": "BUHI",
+      "label": "Buhi"
+    },
+    {
+      "value": "BULA",
+      "label": "Bula"
+    },
+    {
+      "value": "BULACAN",
+      "label": "Bulacan"
+    },
+    {
+      "value": "BULALACAO (SAN PEDRO)",
+      "label": "Bulalacao (San Pedro)"
+    },
+    {
+      "value": "BULAN",
+      "label": "Bulan"
+    },
+    {
+      "value": "BULDON",
+      "label": "Buldon"
+    },
+    {
+      "value": "BULUAN",
+      "label": "Buluan"
+    },
+    {
+      "value": "BULUSAN",
+      "label": "Bulusan"
+    },
+    {
+      "value": "BUMBARAN",
+      "label": "Bumbaran"
+    },
+    {
+      "value": "BUNAWAN",
+      "label": "Bunawan"
+    },
+    {
+      "value": "BURAUEN",
+      "label": "Burauen"
+    },
+    {
+      "value": "BURDEOS",
+      "label": "Burdeos"
+    },
+    {
+      "value": "BURGOS",
+      "label": "Burgos"
+    },
+    {
+      "value": "BURUANGA",
+      "label": "Buruanga"
+    },
+    {
+      "value": "BUSTOS",
+      "label": "Bustos"
+    },
+    {
+      "value": "BUSUANGA",
+      "label": "Busuanga"
+    },
+    {
+      "value": "BUTIG",
+      "label": "Butig"
+    },
+    {
+      "value": "BUTUAN CITY",
+      "label": "Butuan City"
+    },
+    {
+      "value": "BUUG",
+      "label": "Buug"
+    },
+    {
+      "value": "CABA",
+      "label": "Caba"
+    },
+    {
+      "value": "CABADBARAN CITY",
+      "label": "Cabadbaran City"
+    },
+    {
+      "value": "CABAGAN",
+      "label": "Cabagan"
+    },
+    {
+      "value": "CABANATUAN CITY",
+      "label": "Cabanatuan City"
+    },
+    {
+      "value": "CABANGAN",
+      "label": "Cabangan"
+    },
+    {
+      "value": "CABANGLASAN",
+      "label": "Cabanglasan"
+    },
+    {
+      "value": "CABARROGUIS",
+      "label": "Cabarroguis"
+    },
+    {
+      "value": "CABATUAN",
+      "label": "Cabatuan"
+    },
+    {
+      "value": "CABIAO",
+      "label": "Cabiao"
+    },
+    {
+      "value": "CABUCGAYAN",
+      "label": "Cabucgayan"
+    },
+    {
+      "value": "CABUGAO",
+      "label": "Cabugao"
+    },
+    {
+      "value": "CABUSAO",
+      "label": "Cabusao"
+    },
+    {
+      "value": "CABUYAO",
+      "label": "Cabuyao"
+    },
+    {
+      "value": "CADIZ CITY",
+      "label": "Cadiz City"
+    },
+    {
+      "value": "CAGAYAN DE ORO CITY",
+      "label": "Cagayan De Oro City"
+    },
+    {
+      "value": "CAGAYANCILLO",
+      "label": "Cagayancillo"
+    },
+    {
+      "value": "CAGDIANAO",
+      "label": "Cagdianao"
+    },
+    {
+      "value": "CAGWAIT",
+      "label": "Cagwait"
+    },
+    {
+      "value": "CAIBIRAN",
+      "label": "Caibiran"
+    },
+    {
+      "value": "CAINTA",
+      "label": "Cainta"
+    },
+    {
+      "value": "CAJIDIOCAN",
+      "label": "Cajidiocan"
+    },
+    {
+      "value": "CALABANGA",
+      "label": "Calabanga"
+    },
+    {
+      "value": "CALACA",
+      "label": "Calaca"
+    },
+    {
+      "value": "CALAMBA",
+      "label": "Calamba"
+    },
+    {
+      "value": "CALAMBA CITY",
+      "label": "Calamba City"
+    },
+    {
+      "value": "CALANASAN (BAYAG)",
+      "label": "Calanasan (Bayag)"
+    },
+    {
+      "value": "CALANOGAS",
+      "label": "Calanogas"
+    },
+    {
+      "value": "CITY OF CALAPAN",
+      "label": "Calapan"
+    },
+    {
+      "value": "CALAPE",
+      "label": "Calape"
+    },
+    {
+      "value": "CALASIAO",
+      "label": "Calasiao"
+    },
+    {
+      "value": "CALATAGAN",
+      "label": "Calatagan"
+    },
+    {
+      "value": "CALATRAVA",
+      "label": "Calatrava"
+    },
+    {
+      "value": "CALAUAG",
+      "label": "Calauag"
+    },
+    {
+      "value": "CALAUAN",
+      "label": "Calauan"
+    },
+    {
+      "value": "CALAYAN",
+      "label": "Calayan"
+    },
+    {
+      "value": "CALBAYOG CITY",
+      "label": "Calbayog City"
+    },
+    {
+      "value": "CALBIGA",
+      "label": "Calbiga"
+    },
+    {
+      "value": "CALINOG",
+      "label": "Calinog"
+    },
+    {
+      "value": "CALINTAAN",
+      "label": "Calintaan"
+    },
+    {
+      "value": "CALOOCAN CITY",
+      "label": "Caloocan City"
+    },
+    {
+      "value": "CALUBIAN",
+      "label": "Calubian"
+    },
+    {
+      "value": "CALUMPIT",
+      "label": "Calumpit"
+    },
+    {
+      "value": "CALUYA",
+      "label": "Caluya"
+    },
+    {
+      "value": "CAMALANIUGAN",
+      "label": "Camalaniugan"
+    },
+    {
+      "value": "CAMALIG",
+      "label": "Camalig"
+    },
+    {
+      "value": "CAMALIGAN",
+      "label": "Camaligan"
+    },
+    {
+      "value": "CAMILING",
+      "label": "Camiling"
+    },
+    {
+      "value": "CAN-AVID",
+      "label": "Can-Avid"
+    },
+    {
+      "value": "CANAMAN",
+      "label": "Canaman"
+    },
+    {
+      "value": "CANDABA",
+      "label": "Candaba"
+    },
+    {
+      "value": "CANDELARIA",
+      "label": "Candelaria"
+    },
+    {
+      "value": "CANDIJAY",
+      "label": "Candijay"
+    },
+    {
+      "value": "CANDON CITY",
+      "label": "Candon City"
+    },
+    {
+      "value": "CANDONI",
+      "label": "Candoni"
+    },
+    {
+      "value": "CANLAON CITY",
+      "label": "Canlaon City"
+    },
+    {
+      "value": "CANTILAN",
+      "label": "Cantilan"
+    },
+    {
+      "value": "CAOAYAN",
+      "label": "Caoayan"
+    },
+    {
+      "value": "CAPALONGA",
+      "label": "Capalonga"
+    },
+    {
+      "value": "CAPAS",
+      "label": "Capas"
+    },
+    {
+      "value": "CAPOOCAN",
+      "label": "Capoocan"
+    },
+    {
+      "value": "CAPUL",
+      "label": "Capul"
+    },
+    {
+      "value": "CARAGA",
+      "label": "Caraga"
+    },
+    {
+      "value": "CARAMOAN",
+      "label": "Caramoan"
+    },
+    {
+      "value": "CARAMORAN",
+      "label": "Caramoran"
+    },
+    {
+      "value": "CARASI",
+      "label": "Carasi"
+    },
+    {
+      "value": "CARCAR CITY",
+      "label": "Carcar City"
+    },
+    {
+      "value": "CARDONA",
+      "label": "Cardona"
+    },
+    {
+      "value": "CARIGARA",
+      "label": "Carigara"
+    },
+    {
+      "value": "CARLES",
+      "label": "Carles"
+    },
+    {
+      "value": "CARMEN",
+      "label": "Carmen"
+    },
+    {
+      "value": "CARMONA",
+      "label": "Carmona"
+    },
+    {
+      "value": "CARRANGLAN",
+      "label": "Carranglan"
+    },
+    {
+      "value": "CARRASCAL",
+      "label": "Carrascal"
+    },
+    {
+      "value": "CASIGURAN",
+      "label": "Casiguran"
+    },
+    {
+      "value": "CASTILLA",
+      "label": "Castilla"
+    },
+    {
+      "value": "CASTILLEJOS",
+      "label": "Castillejos"
+    },
+    {
+      "value": "CATAINGAN",
+      "label": "Cataingan"
+    },
+    {
+      "value": "CATANAUAN",
+      "label": "Catanauan"
+    },
+    {
+      "value": "CATARMAN",
+      "label": "Catarman"
+    },
+    {
+      "value": "CATBALOGAN CITY",
+      "label": "Catbalogan City"
+    },
+    {
+      "value": "CATEEL",
+      "label": "Cateel"
+    },
+    {
+      "value": "CATIGBIAN",
+      "label": "Catigbian"
+    },
+    {
+      "value": "CATMON",
+      "label": "Catmon"
+    },
+    {
+      "value": "CATUBIG",
+      "label": "Catubig"
+    },
+    {
+      "value": "CAUAYAN",
+      "label": "Cauayan"
+    },
+    {
+      "value": "CAUAYAN CITY",
+      "label": "Cauayan City"
+    },
+    {
+      "value": "CAVINTI",
+      "label": "Cavinti"
+    },
+    {
+      "value": "CAVITE CITY",
+      "label": "Cavite City"
+    },
+    {
+      "value": "CAWAYAN",
+      "label": "Cawayan"
+    },
+    {
+      "value": "CEBU CITY",
+      "label": "Cebu City"
+    },
+    {
+      "value": "CERVANTES",
+      "label": "Cervantes"
+    },
+    {
+      "value": "CLARIN",
+      "label": "Clarin"
+    },
+    {
+      "value": "CLAVER",
+      "label": "Claver"
+    },
+    {
+      "value": "CLAVERIA",
+      "label": "Claveria"
+    },
+    {
+      "value": "COLUMBIO",
+      "label": "Columbio"
+    },
+    {
+      "value": "COMPOSTELA",
+      "label": "Compostela"
+    },
+    {
+      "value": "CONCEPCION",
+      "label": "Concepcion"
+    },
+    {
+      "value": "CONNER",
+      "label": "Conner"
+    },
+    {
+      "value": "CONSOLACION",
+      "label": "Consolacion"
+    },
+    {
+      "value": "CORCUERA",
+      "label": "Corcuera"
+    },
+    {
+      "value": "CORDOBA",
+      "label": "Cordoba"
+    },
+    {
+      "value": "CORDON",
+      "label": "Cordon"
+    },
+    {
+      "value": "CORELLA",
+      "label": "Corella"
+    },
+    {
+      "value": "CORON",
+      "label": "Coron"
+    },
+    {
+      "value": "CORTES",
+      "label": "Cortes"
+    },
+    {
+      "value": "COTABATO CITY",
+      "label": "Cotabato City"
+    },
+    {
+      "value": "CUARTERO",
+      "label": "Cuartero"
+    },
+    {
+      "value": "CUENCA",
+      "label": "Cuenca"
+    },
+    {
+      "value": "CULABA",
+      "label": "Culaba"
+    },
+    {
+      "value": "CULASI",
+      "label": "Culasi"
+    },
+    {
+      "value": "CULION",
+      "label": "Culion"
+    },
+    {
+      "value": "CURRIMAO",
+      "label": "Currimao"
+    },
+    {
+      "value": "CUYAPO",
+      "label": "Cuyapo"
+    },
+    {
+      "value": "CUYO",
+      "label": "Cuyo"
+    },
+    {
+      "value": "DAANBANTAYAN",
+      "label": "Daanbantayan"
+    },
+    {
+      "value": "DAET",
+      "label": "Daet"
+    },
+    {
+      "value": "DAGAMI",
+      "label": "Dagami"
+    },
+    {
+      "value": "DAGOHOY",
+      "label": "Dagohoy"
+    },
+    {
+      "value": "DAGUIOMAN",
+      "label": "Daguioman"
+    },
+    {
+      "value": "DAGUPAN CITY",
+      "label": "Dagupan City"
+    },
+    {
+      "value": "DALAGUETE",
+      "label": "Dalaguete"
+    },
+    {
+      "value": "DAMULOG",
+      "label": "Damulog"
+    },
+    {
+      "value": "DANAO",
+      "label": "Danao"
+    },
+    {
+      "value": "DANAO CITY",
+      "label": "Danao City"
+    },
+    {
+      "value": "DANGCAGAN",
+      "label": "Dangcagan"
+    },
+    {
+      "value": "DANGLAS",
+      "label": "Danglas"
+    },
+    {
+      "value": "DAO",
+      "label": "Dao"
+    },
+    {
+      "value": "DAPA",
+      "label": "Dapa"
+    },
+    {
+      "value": "DAPITAN CITY",
+      "label": "Dapitan City"
+    },
+    {
+      "value": "DARAGA (LOCSIN)",
+      "label": "Daraga (Locsin)"
+    },
+    {
+      "value": "DARAM",
+      "label": "Daram"
+    },
+    {
+      "value": "DASMARIÑAS CITY",
+      "label": "Dasmariñas City"
+    },
+    {
+      "value": "DASOL",
+      "label": "Dasol"
+    },
+    {
+      "value": "DATU ABDULLAH SANGKI",
+      "label": "Datu Abdullah Sangki"
+    },
+    {
+      "value": "DATU ANGGAL MIDTIMBANG",
+      "label": "Datu Anggal Midtimbang"
+    },
+    {
+      "value": "DATU BLAH T. SINSUAT",
+      "label": "Datu Blah T. Sinsuat"
+    },
+    {
+      "value": "DATU HOFFER AMPATUAN",
+      "label": "Datu Hoffer Ampatuan"
+    },
+    {
+      "value": "DATU ODIN SINSUAT (DINAIG)",
+      "label": "Datu Odin Sinsuat (Dinaig)"
+    },
+    {
+      "value": "DATU PAGLAS",
+      "label": "Datu Paglas"
+    },
+    {
+      "value": "DATU PIANG",
+      "label": "Datu Piang"
+    },
+    {
+      "value": "DATU SALIBO",
+      "label": "Datu Salibo"
+    },
+    {
+      "value": "DATU SAUDI AMPATUAN",
+      "label": "Datu Saudi Ampatuan"
+    },
+    {
+      "value": "DATU UNSAY",
+      "label": "Datu Unsay"
+    },
+    {
+      "value": "DAUIN",
+      "label": "Dauin"
+    },
+    {
+      "value": "DAUIS",
+      "label": "Dauis"
+    },
+    {
+      "value": "DAVAO CITY",
+      "label": "Davao City"
+    },
+    {
+      "value": "DEL CARMEN",
+      "label": "Del Carmen"
+    },
+    {
+      "value": "DEL GALLEGO",
+      "label": "Del Gallego"
+    },
+    {
+      "value": "DELFIN ALBANO (MAGSAYSAY)",
+      "label": "Delfin Albano (Magsaysay)"
+    },
+    {
+      "value": "DIADI",
+      "label": "Diadi"
+    },
+    {
+      "value": "DIFFUN",
+      "label": "Diffun"
+    },
+    {
+      "value": "DIGOS CITY",
+      "label": "Digos City"
+    },
+    {
+      "value": "DILASAG",
+      "label": "Dilasag"
+    },
+    {
+      "value": "DIMASALANG",
+      "label": "Dimasalang"
+    },
+    {
+      "value": "DIMATALING",
+      "label": "Dimataling"
+    },
+    {
+      "value": "DIMIAO",
+      "label": "Dimiao"
+    },
+    {
+      "value": "DINAGAT",
+      "label": "Dinagat"
+    },
+    {
+      "value": "DINALUNGAN",
+      "label": "Dinalungan"
+    },
+    {
+      "value": "DINALUPIHAN",
+      "label": "Dinalupihan"
+    },
+    {
+      "value": "DINAPIGUE",
+      "label": "Dinapigue"
+    },
+    {
+      "value": "DINAS",
+      "label": "Dinas"
+    },
+    {
+      "value": "DINGALAN",
+      "label": "Dingalan"
+    },
+    {
+      "value": "DINGLE",
+      "label": "Dingle"
+    },
+    {
+      "value": "DINGRAS",
+      "label": "Dingras"
+    },
+    {
+      "value": "DIPACULAO",
+      "label": "Dipaculao"
+    },
+    {
+      "value": "DIPLAHAN",
+      "label": "Diplahan"
+    },
+    {
+      "value": "DIPOLOG CITY",
+      "label": "Dipolog City"
+    },
+    {
+      "value": "DITSAAN-RAMAIN",
+      "label": "Ditsaan-Ramain"
+    },
+    {
+      "value": "DIVILACAN",
+      "label": "Divilacan"
+    },
+    {
+      "value": "DOLORES",
+      "label": "Dolores"
+    },
+    {
+      "value": "DON CARLOS",
+      "label": "Don Carlos"
+    },
+    {
+      "value": "DON MARCELINO",
+      "label": "Don Marcelino"
+    },
+    {
+      "value": "DON VICTORIANO CHIONGBIAN (DON MARIANO MARCOS)",
+      "label": "Don Victoriano Chiongbian (Don Mariano Marcos)"
+    },
+    {
+      "value": "DOÑA REMEDIOS TRINIDAD",
+      "label": "Doña Remedios Trinidad"
+    },
+    {
+      "value": "DONSOL",
+      "label": "Donsol"
+    },
+    {
+      "value": "DUEÑAS",
+      "label": "Dueñas"
+    },
+    {
+      "value": "DUERO",
+      "label": "Duero"
+    },
+    {
+      "value": "DULAG",
+      "label": "Dulag"
+    },
+    {
+      "value": "DUMAGUETE CITY",
+      "label": "Dumaguete City"
+    },
+    {
+      "value": "DUMALAG",
+      "label": "Dumalag"
+    },
+    {
+      "value": "DUMALINAO",
+      "label": "Dumalinao"
+    },
+    {
+      "value": "DUMALNEG",
+      "label": "Dumalneg"
+    },
+    {
+      "value": "DUMANGAS",
+      "label": "Dumangas"
+    },
+    {
+      "value": "DUMANJUG",
+      "label": "Dumanjug"
+    },
+    {
+      "value": "DUMARAN",
+      "label": "Dumaran"
+    },
+    {
+      "value": "DUMARAO",
+      "label": "Dumarao"
+    },
+    {
+      "value": "DUMINGAG",
+      "label": "Dumingag"
+    },
+    {
+      "value": "DUPAX DEL NORTE",
+      "label": "Dupax Del Norte"
+    },
+    {
+      "value": "DUPAX DEL SUR",
+      "label": "Dupax Del Sur"
+    },
+    {
+      "value": "ECHAGUE",
+      "label": "Echague"
+    },
+    {
+      "value": "EL NIDO (BACUIT)",
+      "label": "El Nido (Bacuit)"
+    },
+    {
+      "value": "EL SALVADOR CITY",
+      "label": "El Salvador City"
+    },
+    {
+      "value": "ENRILE",
+      "label": "Enrile"
+    },
+    {
+      "value": "ENRIQUE B. MAGALONA (SARAVIA)",
+      "label": "Enrique B. Magalona (Saravia)"
+    },
+    {
+      "value": "ENRIQUE VILLANUEVA",
+      "label": "Enrique Villanueva"
+    },
+    {
+      "value": "ERMITA",
+      "label": "Ermita"
+    },
+    {
+      "value": "ESCALANTE CITY",
+      "label": "Escalante City"
+    },
+    {
+      "value": "ESPERANZA",
+      "label": "Esperanza"
+    },
+    {
+      "value": "ESTANCIA",
+      "label": "Estancia"
+    },
+    {
+      "value": "FAMY",
+      "label": "Famy"
+    },
+    {
+      "value": "FERROL",
+      "label": "Ferrol"
+    },
+    {
+      "value": "FLORA",
+      "label": "Flora"
+    },
+    {
+      "value": "FLORIDABLANCA",
+      "label": "Floridablanca"
+    },
+    {
+      "value": "GABALDON (BITULOK AND SABANI)",
+      "label": "Gabaldon (Bitulok And Sabani)"
+    },
+    {
+      "value": "GAINZA",
+      "label": "Gainza"
+    },
+    {
+      "value": "GALIMUYOD",
+      "label": "Galimuyod"
+    },
+    {
+      "value": "GAMAY",
+      "label": "Gamay"
+    },
+    {
+      "value": "GAMU",
+      "label": "Gamu"
+    },
+    {
+      "value": "GANASSI",
+      "label": "Ganassi"
+    },
+    {
+      "value": "GANDARA",
+      "label": "Gandara"
+    },
+    {
+      "value": "GAPAN CITY",
+      "label": "Gapan City"
+    },
+    {
+      "value": "GARCHITORENA",
+      "label": "Garchitorena"
+    },
+    {
+      "value": "GARCIA HERNANDEZ",
+      "label": "Garcia Hernandez"
+    },
+    {
+      "value": "GASAN",
+      "label": "Gasan"
+    },
+    {
+      "value": "GATTARAN",
+      "label": "Gattaran"
+    },
+    {
+      "value": "GEN. MARIANO ALVAREZ",
+      "label": "Gen. Mariano Alvarez"
+    },
+    {
+      "value": "GEN. S. K. PENDATUN",
+      "label": "Gen. S. K. Pendatun"
+    },
+    {
+      "value": "GENERAL EMILIO AGUINALDO",
+      "label": "General Emilio Aguinaldo"
+    },
+    {
+      "value": "GENERAL LUNA",
+      "label": "General Luna"
+    },
+    {
+      "value": "GENERAL MACARTHUR",
+      "label": "General Macarthur"
+    },
+    {
+      "value": "GENERAL MAMERTO NATIVIDAD",
+      "label": "General Mamerto Natividad"
+    },
+    {
+      "value": "GENERAL NAKAR",
+      "label": "General Nakar"
+    },
+    {
+      "value": "GENERAL SANTOS CITY (DADIANGAS)",
+      "label": "General Santos City (Dadiangas)"
+    },
+    {
+      "value": "GENERAL TINIO (PAPAYA)",
+      "label": "General Tinio (Papaya)"
+    },
+    {
+      "value": "GENERAL TRIAS CITY",
+      "label": "General Trias City"
+    },
+    {
+      "value": "GERONA",
+      "label": "Gerona"
+    },
+    {
+      "value": "GIGAQUIT",
+      "label": "Gigaquit"
+    },
+    {
+      "value": "GIGMOTO",
+      "label": "Gigmoto"
+    },
+    {
+      "value": "GINATILAN",
+      "label": "Ginatilan"
+    },
+    {
+      "value": "GINGOOG CITY",
+      "label": "Gingoog City"
+    },
+    {
+      "value": "GIPORLOS",
+      "label": "Giporlos"
+    },
+    {
+      "value": "GITAGUM",
+      "label": "Gitagum"
+    },
+    {
+      "value": "GLAN",
+      "label": "Glan"
+    },
+    {
+      "value": "GLORIA",
+      "label": "Gloria"
+    },
+    {
+      "value": "GOA",
+      "label": "Goa"
+    },
+    {
+      "value": "GODOD",
+      "label": "Godod"
+    },
+    {
+      "value": "GONZAGA",
+      "label": "Gonzaga"
+    },
+    {
+      "value": "GOVERNOR GENEROSO",
+      "label": "Governor Generoso"
+    },
+    {
+      "value": "GREGORIO DEL PILAR (CONCEPCION)",
+      "label": "Gregorio Del Pilar (Concepcion)"
+    },
+    {
+      "value": "GUAGUA",
+      "label": "Guagua"
+    },
+    {
+      "value": "GUBAT",
+      "label": "Gubat"
+    },
+    {
+      "value": "GUIGUINTO",
+      "label": "Guiguinto"
+    },
+    {
+      "value": "GUIHULNGAN CITY",
+      "label": "Guihulngan City"
+    },
+    {
+      "value": "GUIMBA",
+      "label": "Guimba"
+    },
+    {
+      "value": "GUIMBAL",
+      "label": "Guimbal"
+    },
+    {
+      "value": "GUINAYANGAN",
+      "label": "Guinayangan"
+    },
+    {
+      "value": "GUINDULMAN",
+      "label": "Guindulman"
+    },
+    {
+      "value": "GUINDULUNGAN",
+      "label": "Guindulungan"
+    },
+    {
+      "value": "GUINOBATAN",
+      "label": "Guinobatan"
+    },
+    {
+      "value": "GUINSILIBAN",
+      "label": "Guinsiliban"
+    },
+    {
+      "value": "GUIPOS",
+      "label": "Guipos"
+    },
+    {
+      "value": "GUIUAN",
+      "label": "Guiuan"
+    },
+    {
+      "value": "GUMACA",
+      "label": "Gumaca"
+    },
+    {
+      "value": "GUTALAC",
+      "label": "Gutalac"
+    },
+    {
+      "value": "HADJI MOHAMMAD AJUL",
+      "label": "Hadji Mohammad Ajul"
+    },
+    {
+      "value": "HADJI MUHTAMAD",
+      "label": "Hadji Muhtamad"
+    },
+    {
+      "value": "HADJI PANGLIMA TAHIL (MARUNGGAS)",
+      "label": "Hadji Panglima Tahil (Marunggas)"
+    },
+    {
+      "value": "HAGONOY",
+      "label": "Hagonoy"
+    },
+    {
+      "value": "HAMTIC",
+      "label": "Hamtic"
+    },
+    {
+      "value": "HERMOSA",
+      "label": "Hermosa"
+    },
+    {
+      "value": "HERNANI",
+      "label": "Hernani"
+    },
+    {
+      "value": "HILONGOS",
+      "label": "Hilongos"
+    },
+    {
+      "value": "HIMAMAYLAN CITY",
+      "label": "Himamaylan City"
+    },
+    {
+      "value": "HINABANGAN",
+      "label": "Hinabangan"
+    },
+    {
+      "value": "HINATUAN",
+      "label": "Hinatuan"
+    },
+    {
+      "value": "HINDANG",
+      "label": "Hindang"
+    },
+    {
+      "value": "HINGYON",
+      "label": "Hingyon"
+    },
+    {
+      "value": "HINIGARAN",
+      "label": "Hinigaran"
+    },
+    {
+      "value": "HINOBA-AN (ASIA)",
+      "label": "Hinoba-An (Asia)"
+    },
+    {
+      "value": "HINUNANGAN",
+      "label": "Hinunangan"
+    },
+    {
+      "value": "HINUNDAYAN",
+      "label": "Hinundayan"
+    },
+    {
+      "value": "HUNGDUAN",
+      "label": "Hungduan"
+    },
+    {
+      "value": "IBA",
+      "label": "Iba"
+    },
+    {
+      "value": "IBAAN",
+      "label": "Ibaan"
+    },
+    {
+      "value": "IBAJAY",
+      "label": "Ibajay"
+    },
+    {
+      "value": "IGBARAS",
+      "label": "Igbaras"
+    },
+    {
+      "value": "IGUIG",
+      "label": "Iguig"
+    },
+    {
+      "value": "ILAGAN CITY",
+      "label": "Ilagan City"
+    },
+    {
+      "value": "ILIGAN CITY",
+      "label": "Iligan City"
+    },
+    {
+      "value": "ILOG",
+      "label": "Ilog"
+    },
+    {
+      "value": "ILOILO CITY",
+      "label": "Iloilo City"
+    },
+    {
+      "value": "IMELDA",
+      "label": "Imelda"
+    },
+    {
+      "value": "IMPASUG-ONG",
+      "label": "Impasug-Ong"
+    },
+    {
+      "value": "IMUS CITY",
+      "label": "Imus City"
+    },
+    {
+      "value": "INABANGA",
+      "label": "Inabanga"
+    },
+    {
+      "value": "INDANAN",
+      "label": "Indanan"
+    },
+    {
+      "value": "INDANG",
+      "label": "Indang"
+    },
+    {
+      "value": "INFANTA",
+      "label": "Infanta"
+    },
+    {
+      "value": "INITAO",
+      "label": "Initao"
+    },
+    {
+      "value": "INOPACAN",
+      "label": "Inopacan"
+    },
+    {
+      "value": "INTRAMUROS",
+      "label": "Intramuros"
+    },
+    {
+      "value": "IPIL",
+      "label": "Ipil"
+    },
+    {
+      "value": "IRIGA CITY",
+      "label": "Iriga City"
+    },
+    {
+      "value": "IROSIN",
+      "label": "Irosin"
+    },
+    {
+      "value": "ISABEL",
+      "label": "Isabel"
+    },
+    {
+      "value": "ISABELA",
+      "label": "Isabela"
+    },
+    {
+      "value": "ISABELA CITY",
+      "label": "Isabela City"
+    },
+    {
+      "value": "ISLAND GARDEN CITY OF SAMAL",
+      "label": "Island Garden Samal"
+    },
+    {
+      "value": "ISULAN",
+      "label": "Isulan"
+    },
+    {
+      "value": "ITBAYAT",
+      "label": "Itbayat"
+    },
+    {
+      "value": "ITOGON",
+      "label": "Itogon"
+    },
+    {
+      "value": "IVANA",
+      "label": "Ivana"
+    },
+    {
+      "value": "IVISAN",
+      "label": "Ivisan"
+    },
+    {
+      "value": "JABONGA",
+      "label": "Jabonga"
+    },
+    {
+      "value": "JAEN",
+      "label": "Jaen"
+    },
+    {
+      "value": "JAGNA",
+      "label": "Jagna"
+    },
+    {
+      "value": "JALA-JALA",
+      "label": "Jala-Jala"
+    },
+    {
+      "value": "JAMINDAN",
+      "label": "Jamindan"
+    },
+    {
+      "value": "JANIUAY",
+      "label": "Janiuay"
+    },
+    {
+      "value": "JARO",
+      "label": "Jaro"
+    },
+    {
+      "value": "JASAAN",
+      "label": "Jasaan"
+    },
+    {
+      "value": "JAVIER (BUGHO)",
+      "label": "Javier (Bugho)"
+    },
+    {
+      "value": "JETAFE",
+      "label": "Jetafe"
+    },
+    {
+      "value": "JIABONG",
+      "label": "Jiabong"
+    },
+    {
+      "value": "JIMALALUD",
+      "label": "Jimalalud"
+    },
+    {
+      "value": "JIMENEZ",
+      "label": "Jimenez"
+    },
+    {
+      "value": "JIPAPAD",
+      "label": "Jipapad"
+    },
+    {
+      "value": "JOLO",
+      "label": "Jolo"
+    },
+    {
+      "value": "JOMALIG",
+      "label": "Jomalig"
+    },
+    {
+      "value": "JONES",
+      "label": "Jones"
+    },
+    {
+      "value": "JORDAN",
+      "label": "Jordan"
+    },
+    {
+      "value": "JOSE ABAD SANTOS (TRINIDAD)",
+      "label": "Jose Abad Santos (Trinidad)"
+    },
+    {
+      "value": "JOSE DALMAN (PONOT)",
+      "label": "Jose Dalman (Ponot)"
+    },
+    {
+      "value": "JOSE PANGANIBAN",
+      "label": "Jose Panganiban"
+    },
+    {
+      "value": "JOSEFINA",
+      "label": "Josefina"
+    },
+    {
+      "value": "JOVELLAR",
+      "label": "Jovellar"
+    },
+    {
+      "value": "JUBAN",
+      "label": "Juban"
+    },
+    {
+      "value": "JULITA",
+      "label": "Julita"
+    },
+    {
+      "value": "KABACAN",
+      "label": "Kabacan"
+    },
+    {
+      "value": "KABANKALAN CITY",
+      "label": "Kabankalan City"
+    },
+    {
+      "value": "KABASALAN",
+      "label": "Kabasalan"
+    },
+    {
+      "value": "KABAYAN",
+      "label": "Kabayan"
+    },
+    {
+      "value": "KABUGAO",
+      "label": "Kabugao"
+    },
+    {
+      "value": "KABUNTALAN (TUMBAO)",
+      "label": "Kabuntalan (Tumbao)"
+    },
+    {
+      "value": "KADINGILAN",
+      "label": "Kadingilan"
+    },
+    {
+      "value": "KALAMANSIG",
+      "label": "Kalamansig"
+    },
+    {
+      "value": "KALAWIT",
+      "label": "Kalawit"
+    },
+    {
+      "value": "KALAYAAN",
+      "label": "Kalayaan"
+    },
+    {
+      "value": "KALIBO",
+      "label": "Kalibo"
+    },
+    {
+      "value": "KALILANGAN",
+      "label": "Kalilangan"
+    },
+    {
+      "value": "KALINGALAN CALUANG",
+      "label": "Kalingalan Caluang"
+    },
+    {
+      "value": "KANANGA",
+      "label": "Kananga"
+    },
+    {
+      "value": "KAPAI",
+      "label": "Kapai"
+    },
+    {
+      "value": "KAPALONG",
+      "label": "Kapalong"
+    },
+    {
+      "value": "KAPANGAN",
+      "label": "Kapangan"
+    },
+    {
+      "value": "KAPATAGAN",
+      "label": "Kapatagan"
+    },
+    {
+      "value": "KASIBU",
+      "label": "Kasibu"
+    },
+    {
+      "value": "KATIPUNAN",
+      "label": "Katipunan"
+    },
+    {
+      "value": "KAUSWAGAN",
+      "label": "Kauswagan"
+    },
+    {
+      "value": "KAWAYAN",
+      "label": "Kawayan"
+    },
+    {
+      "value": "KAWIT",
+      "label": "Kawit"
+    },
+    {
+      "value": "KAYAPA",
+      "label": "Kayapa"
+    },
+    {
+      "value": "KIAMBA",
+      "label": "Kiamba"
+    },
+    {
+      "value": "KIANGAN",
+      "label": "Kiangan"
+    },
+    {
+      "value": "KIBAWE",
+      "label": "Kibawe"
+    },
+    {
+      "value": "KIBLAWAN",
+      "label": "Kiblawan"
+    },
+    {
+      "value": "KIBUNGAN",
+      "label": "Kibungan"
+    },
+    {
+      "value": "CITY OF KIDAPAWAN",
+      "label": "Kidapawan"
+    },
+    {
+      "value": "KINOGUITAN",
+      "label": "Kinoguitan"
+    },
+    {
+      "value": "KITAOTAO",
+      "label": "Kitaotao"
+    },
+    {
+      "value": "KITCHARAO",
+      "label": "Kitcharao"
+    },
+    {
+      "value": "KOLAMBUGAN",
+      "label": "Kolambugan"
+    },
+    {
+      "value": "KORONADAL CITY",
+      "label": "Koronadal City"
+    },
+    {
+      "value": "KUMALARANG",
+      "label": "Kumalarang"
+    },
+    {
+      "value": "LA CARLOTA CITY",
+      "label": "La Carlota City"
+    },
+    {
+      "value": "LA CASTELLANA",
+      "label": "La Castellana"
+    },
+    {
+      "value": "LA LIBERTAD",
+      "label": "La Libertad"
+    },
+    {
+      "value": "LA PAZ",
+      "label": "La Paz"
+    },
+    {
+      "value": "LA TRINIDAD",
+      "label": "La Trinidad"
+    },
+    {
+      "value": "LAAK (SAN VICENTE)",
+      "label": "Laak (San Vicente)"
+    },
+    {
+      "value": "LABANGAN",
+      "label": "Labangan"
+    },
+    {
+      "value": "LABASON",
+      "label": "Labason"
+    },
+    {
+      "value": "LABO",
+      "label": "Labo"
+    },
+    {
+      "value": "LABRADOR",
+      "label": "Labrador"
+    },
+    {
+      "value": "LACUB",
+      "label": "Lacub"
+    },
+    {
+      "value": "LAGANGILANG",
+      "label": "Lagangilang"
+    },
+    {
+      "value": "LAGAWE",
+      "label": "Lagawe"
+    },
+    {
+      "value": "LAGAYAN",
+      "label": "Lagayan"
+    },
+    {
+      "value": "LAGONGLONG",
+      "label": "Lagonglong"
+    },
+    {
+      "value": "LAGONOY",
+      "label": "Lagonoy"
+    },
+    {
+      "value": "LAGUINDINGAN",
+      "label": "Laguindingan"
+    },
+    {
+      "value": "LAKE SEBU",
+      "label": "Lake Sebu"
+    },
+    {
+      "value": "LAKEWOOD",
+      "label": "Lakewood"
+    },
+    {
+      "value": "LAL-LO",
+      "label": "Lal-Lo"
+    },
+    {
+      "value": "LALA",
+      "label": "Lala"
+    },
+    {
+      "value": "LAMBAYONG (MARIANO MARCOS)",
+      "label": "Lambayong (Mariano Marcos)"
+    },
+    {
+      "value": "LAMBUNAO",
+      "label": "Lambunao"
+    },
+    {
+      "value": "LAMITAN CITY",
+      "label": "Lamitan City"
+    },
+    {
+      "value": "LAMUT",
+      "label": "Lamut"
+    },
+    {
+      "value": "LANGIDEN",
+      "label": "Langiden"
+    },
+    {
+      "value": "LANGUYAN",
+      "label": "Languyan"
+    },
+    {
+      "value": "LANTAPAN",
+      "label": "Lantapan"
+    },
+    {
+      "value": "LANTAWAN",
+      "label": "Lantawan"
+    },
+    {
+      "value": "LANUZA",
+      "label": "Lanuza"
+    },
+    {
+      "value": "LAOAC",
+      "label": "Laoac"
+    },
+    {
+      "value": "LAOAG CITY",
+      "label": "Laoag City"
+    },
+    {
+      "value": "LAOANG",
+      "label": "Laoang"
+    },
+    {
+      "value": "LAPINIG",
+      "label": "Lapinig"
+    },
+    {
+      "value": "LAPU-LAPU CITY (OPON)",
+      "label": "Lapu-Lapu City (Opon)"
+    },
+    {
+      "value": "LAPUYAN",
+      "label": "Lapuyan"
+    },
+    {
+      "value": "LARENA",
+      "label": "Larena"
+    },
+    {
+      "value": "LAS NAVAS",
+      "label": "Las Navas"
+    },
+    {
+      "value": "LAS NIEVES",
+      "label": "Las Nieves"
+    },
+    {
+      "value": "CITY OF LAS PIÑAS",
+      "label": "Las Piñas"
+    },
+    {
+      "value": "LASAM",
+      "label": "Lasam"
+    },
+    {
+      "value": "LAUA-AN",
+      "label": "Laua-An"
+    },
+    {
+      "value": "LAUR",
+      "label": "Laur"
+    },
+    {
+      "value": "LAUREL",
+      "label": "Laurel"
+    },
+    {
+      "value": "LAVEZARES",
+      "label": "Lavezares"
+    },
+    {
+      "value": "LAWAAN",
+      "label": "Lawaan"
+    },
+    {
+      "value": "LAZI",
+      "label": "Lazi"
+    },
+    {
+      "value": "LEBAK",
+      "label": "Lebak"
+    },
+    {
+      "value": "LEGANES",
+      "label": "Leganes"
+    },
+    {
+      "value": "LEGAZPI CITY",
+      "label": "Legazpi City"
+    },
+    {
+      "value": "LEMERY",
+      "label": "Lemery"
+    },
+    {
+      "value": "LEON",
+      "label": "Leon"
+    },
+    {
+      "value": "LEYTE",
+      "label": "Leyte"
+    },
+    {
+      "value": "LEZO",
+      "label": "Lezo"
+    },
+    {
+      "value": "LIAN",
+      "label": "Lian"
+    },
+    {
+      "value": "LIANGA",
+      "label": "Lianga"
+    },
+    {
+      "value": "LIBACAO",
+      "label": "Libacao"
+    },
+    {
+      "value": "LIBAGON",
+      "label": "Libagon"
+    },
+    {
+      "value": "LIBERTAD",
+      "label": "Libertad"
+    },
+    {
+      "value": "LIBJO (ALBOR)",
+      "label": "Libjo (Albor)"
+    },
+    {
+      "value": "LIBMANAN",
+      "label": "Libmanan"
+    },
+    {
+      "value": "LIBON",
+      "label": "Libon"
+    },
+    {
+      "value": "LIBONA",
+      "label": "Libona"
+    },
+    {
+      "value": "LIBUNGAN",
+      "label": "Libungan"
+    },
+    {
+      "value": "LICAB",
+      "label": "Licab"
+    },
+    {
+      "value": "LICUAN-BAAY (LICUAN)",
+      "label": "Licuan-Baay (Licuan)"
+    },
+    {
+      "value": "LIDLIDDA",
+      "label": "Lidlidda"
+    },
+    {
+      "value": "CITY OF LIGAO",
+      "label": "Ligao"
+    },
+    {
+      "value": "LILA",
+      "label": "Lila"
+    },
+    {
+      "value": "LILIW",
+      "label": "Liliw"
+    },
+    {
+      "value": "LILOAN",
+      "label": "Liloan"
+    },
+    {
+      "value": "LILOY",
+      "label": "Liloy"
+    },
+    {
+      "value": "LIMASAWA",
+      "label": "Limasawa"
+    },
+    {
+      "value": "LIMAY",
+      "label": "Limay"
+    },
+    {
+      "value": "LINAMON",
+      "label": "Linamon"
+    },
+    {
+      "value": "LINAPACAN",
+      "label": "Linapacan"
+    },
+    {
+      "value": "LINGAYEN",
+      "label": "Lingayen"
+    },
+    {
+      "value": "LINGIG",
+      "label": "Lingig"
+    },
+    {
+      "value": "LIPA CITY",
+      "label": "Lipa City"
+    },
+    {
+      "value": "LLANERA",
+      "label": "Llanera"
+    },
+    {
+      "value": "LLORENTE",
+      "label": "Llorente"
+    },
+    {
+      "value": "LOAY",
+      "label": "Loay"
+    },
+    {
+      "value": "LOBO",
+      "label": "Lobo"
+    },
+    {
+      "value": "LOBOC",
+      "label": "Loboc"
+    },
+    {
+      "value": "LOOC",
+      "label": "Looc"
+    },
+    {
+      "value": "LOON",
+      "label": "Loon"
+    },
+    {
+      "value": "LOPE DE VEGA",
+      "label": "Lope De Vega"
+    },
+    {
+      "value": "LOPEZ",
+      "label": "Lopez"
+    },
+    {
+      "value": "LOPEZ JAENA",
+      "label": "Lopez Jaena"
+    },
+    {
+      "value": "LORETO",
+      "label": "Loreto"
+    },
+    {
+      "value": "LOS BAÑOS",
+      "label": "Los Baños"
+    },
+    {
+      "value": "LUBA",
+      "label": "Luba"
+    },
+    {
+      "value": "LUBANG",
+      "label": "Lubang"
+    },
+    {
+      "value": "LUBAO",
+      "label": "Lubao"
+    },
+    {
+      "value": "LUBUAGAN",
+      "label": "Lubuagan"
+    },
+    {
+      "value": "LUCBAN",
+      "label": "Lucban"
+    },
+    {
+      "value": "LUCENA CITY",
+      "label": "Lucena City"
+    },
+    {
+      "value": "LUGAIT",
+      "label": "Lugait"
+    },
+    {
+      "value": "LUGUS",
+      "label": "Lugus"
+    },
+    {
+      "value": "LUISIANA",
+      "label": "Luisiana"
+    },
+    {
+      "value": "LUMBA-BAYABAO (MAGUING)",
+      "label": "Lumba-Bayabao (Maguing)"
+    },
+    {
+      "value": "LUMBACA-UNAYAN",
+      "label": "Lumbaca-Unayan"
+    },
+    {
+      "value": "LUMBAN",
+      "label": "Lumban"
+    },
+    {
+      "value": "LUMBATAN",
+      "label": "Lumbatan"
+    },
+    {
+      "value": "LUMBAYANAGUE",
+      "label": "Lumbayanague"
+    },
+    {
+      "value": "LUNA",
+      "label": "Luna"
+    },
+    {
+      "value": "LUPAO",
+      "label": "Lupao"
+    },
+    {
+      "value": "LUPI",
+      "label": "Lupi"
+    },
+    {
+      "value": "LUPON",
+      "label": "Lupon"
+    },
+    {
+      "value": "LUTAYAN",
+      "label": "Lutayan"
+    },
+    {
+      "value": "LUUK",
+      "label": "Luuk"
+    },
+    {
+      "value": "M'LANG",
+      "label": "M'Lang"
+    },
+    {
+      "value": "MA-AYON",
+      "label": "Ma-Ayon"
+    },
+    {
+      "value": "MAASIM",
+      "label": "Maasim"
+    },
+    {
+      "value": "MAASIN",
+      "label": "Maasin"
+    },
+    {
+      "value": "MAASIN CITY",
+      "label": "Maasin City"
+    },
+    {
+      "value": "MABALACAT",
+      "label": "Mabalacat"
+    },
+    {
+      "value": "MABINAY",
+      "label": "Mabinay"
+    },
+    {
+      "value": "MABINI",
+      "label": "Mabini"
+    },
+    {
+      "value": "MABINI (DOÑA ALICIA)",
+      "label": "Mabini (Doña Alicia)"
+    },
+    {
+      "value": "MABITAC",
+      "label": "Mabitac"
+    },
+    {
+      "value": "MABUHAY",
+      "label": "Mabuhay"
+    },
+    {
+      "value": "MACABEBE",
+      "label": "Macabebe"
+    },
+    {
+      "value": "MACALELON",
+      "label": "Macalelon"
+    },
+    {
+      "value": "MACARTHUR",
+      "label": "Macarthur"
+    },
+    {
+      "value": "MACO",
+      "label": "Maco"
+    },
+    {
+      "value": "MACONACON",
+      "label": "Maconacon"
+    },
+    {
+      "value": "MACROHON",
+      "label": "Macrohon"
+    },
+    {
+      "value": "MADALAG",
+      "label": "Madalag"
+    },
+    {
+      "value": "MADALUM",
+      "label": "Madalum"
+    },
+    {
+      "value": "MADAMBA",
+      "label": "Madamba"
+    },
+    {
+      "value": "MADDELA",
+      "label": "Maddela"
+    },
+    {
+      "value": "MADRID",
+      "label": "Madrid"
+    },
+    {
+      "value": "MADRIDEJOS",
+      "label": "Madridejos"
+    },
+    {
+      "value": "MAGALANG",
+      "label": "Magalang"
+    },
+    {
+      "value": "MAGALLANES",
+      "label": "Magallanes"
+    },
+    {
+      "value": "MAGARAO",
+      "label": "Magarao"
+    },
+    {
+      "value": "MAGDALENA",
+      "label": "Magdalena"
+    },
+    {
+      "value": "MAGDIWANG",
+      "label": "Magdiwang"
+    },
+    {
+      "value": "MAGPET",
+      "label": "Magpet"
+    },
+    {
+      "value": "MAGSAYSAY",
+      "label": "Magsaysay"
+    },
+    {
+      "value": "MAGSAYSAY (LINUGOS)",
+      "label": "Magsaysay (Linugos)"
+    },
+    {
+      "value": "MAGSINGAL",
+      "label": "Magsingal"
+    },
+    {
+      "value": "MAGUING",
+      "label": "Maguing"
+    },
+    {
+      "value": "MAHAPLAG",
+      "label": "Mahaplag"
+    },
+    {
+      "value": "MAHATAO",
+      "label": "Mahatao"
+    },
+    {
+      "value": "MAHAYAG",
+      "label": "Mahayag"
+    },
+    {
+      "value": "MAHINOG",
+      "label": "Mahinog"
+    },
+    {
+      "value": "MAIGO",
+      "label": "Maigo"
+    },
+    {
+      "value": "MAIMBUNG",
+      "label": "Maimbung"
+    },
+    {
+      "value": "MAINIT",
+      "label": "Mainit"
+    },
+    {
+      "value": "MAITUM",
+      "label": "Maitum"
+    },
+    {
+      "value": "MAJAYJAY",
+      "label": "Majayjay"
+    },
+    {
+      "value": "CITY OF MAKATI",
+      "label": "Makati"
+    },
+    {
+      "value": "MAKATO",
+      "label": "Makato"
+    },
+    {
+      "value": "MAKILALA",
+      "label": "Makilala"
+    },
+    {
+      "value": "MALABANG",
+      "label": "Malabang"
+    },
+    {
+      "value": "MALABON CITY",
+      "label": "Malabon City"
+    },
+    {
+      "value": "MALABUYOC",
+      "label": "Malabuyoc"
+    },
+    {
+      "value": "MALALAG",
+      "label": "Malalag"
+    },
+    {
+      "value": "MALANGAS",
+      "label": "Malangas"
+    },
+    {
+      "value": "MALAPATAN",
+      "label": "Malapatan"
+    },
+    {
+      "value": "MALASIQUI",
+      "label": "Malasiqui"
+    },
+    {
+      "value": "MALATE",
+      "label": "Malate"
+    },
+    {
+      "value": "MALAY",
+      "label": "Malay"
+    },
+    {
+      "value": "CITY OF MALAYBALAY",
+      "label": "Malaybalay"
+    },
+    {
+      "value": "MALIBCONG",
+      "label": "Malibcong"
+    },
+    {
+      "value": "MALILIPOT",
+      "label": "Malilipot"
+    },
+    {
+      "value": "MALIMONO",
+      "label": "Malimono"
+    },
+    {
+      "value": "MALINAO",
+      "label": "Malinao"
+    },
+    {
+      "value": "MALITA",
+      "label": "Malita"
+    },
+    {
+      "value": "MALITBOG",
+      "label": "Malitbog"
+    },
+    {
+      "value": "MALLIG",
+      "label": "Mallig"
+    },
+    {
+      "value": "MALOLOS CITY",
+      "label": "Malolos City"
+    },
+    {
+      "value": "MALUNGON",
+      "label": "Malungon"
+    },
+    {
+      "value": "MALUSO",
+      "label": "Maluso"
+    },
+    {
+      "value": "MALVAR",
+      "label": "Malvar"
+    },
+    {
+      "value": "MAMASAPANO",
+      "label": "Mamasapano"
+    },
+    {
+      "value": "MAMBAJAO",
+      "label": "Mambajao"
+    },
+    {
+      "value": "MAMBURAO",
+      "label": "Mamburao"
+    },
+    {
+      "value": "MAMBUSAO",
+      "label": "Mambusao"
+    },
+    {
+      "value": "MANABO",
+      "label": "Manabo"
+    },
+    {
+      "value": "MANAOAG",
+      "label": "Manaoag"
+    },
+    {
+      "value": "MANAPLA",
+      "label": "Manapla"
+    },
+    {
+      "value": "MANAY",
+      "label": "Manay"
+    },
+    {
+      "value": "CITY OF MANDALUYONG",
+      "label": "Mandaluyong"
+    },
+    {
+      "value": "MANDAON",
+      "label": "Mandaon"
+    },
+    {
+      "value": "MANDAUE CITY",
+      "label": "Mandaue City"
+    },
+    {
+      "value": "MANGALDAN",
+      "label": "Mangaldan"
+    },
+    {
+      "value": "MANGATAREM",
+      "label": "Mangatarem"
+    },
+    {
+      "value": "MANGUDADATU",
+      "label": "Mangudadatu"
+    },
+    {
+      "value": "MANITO",
+      "label": "Manito"
+    },
+    {
+      "value": "MANJUYOD",
+      "label": "Manjuyod"
+    },
+    {
+      "value": "MANKAYAN",
+      "label": "Mankayan"
+    },
+    {
+      "value": "MANOLO FORTICH",
+      "label": "Manolo Fortich"
+    },
+    {
+      "value": "MANSALAY",
+      "label": "Mansalay"
+    },
+    {
+      "value": "MANTICAO",
+      "label": "Manticao"
+    },
+    {
+      "value": "MANUKAN",
+      "label": "Manukan"
+    },
+    {
+      "value": "MAPANAS",
+      "label": "Mapanas"
+    },
+    {
+      "value": "MAPANDAN",
+      "label": "Mapandan"
+    },
+    {
+      "value": "MAPUN (CAGAYAN DE TAWI-TAWI)",
+      "label": "Mapun (Cagayan De Tawi-Tawi)"
+    },
+    {
+      "value": "MARABUT",
+      "label": "Marabut"
+    },
+    {
+      "value": "MARAGONDON",
+      "label": "Maragondon"
+    },
+    {
+      "value": "MARAGUSAN (SAN MARIANO)",
+      "label": "Maragusan (San Mariano)"
+    },
+    {
+      "value": "MARAMAG",
+      "label": "Maramag"
+    },
+    {
+      "value": "MARANTAO",
+      "label": "Marantao"
+    },
+    {
+      "value": "MARAWI CITY",
+      "label": "Marawi City"
+    },
+    {
+      "value": "MARCOS",
+      "label": "Marcos"
+    },
+    {
+      "value": "MARGOSATUBIG",
+      "label": "Margosatubig"
+    },
+    {
+      "value": "MARIA",
+      "label": "Maria"
+    },
+    {
+      "value": "MARIA AURORA",
+      "label": "Maria Aurora"
+    },
+    {
+      "value": "MARIBOJOC",
+      "label": "Maribojoc"
+    },
+    {
+      "value": "MARIHATAG",
+      "label": "Marihatag"
+    },
+    {
+      "value": "CITY OF MARIKINA",
+      "label": "Marikina"
+    },
+    {
+      "value": "MARILAO",
+      "label": "Marilao"
+    },
+    {
+      "value": "MARIPIPI",
+      "label": "Maripipi"
+    },
+    {
+      "value": "MARIVELES",
+      "label": "Mariveles"
+    },
+    {
+      "value": "MAROGONG",
+      "label": "Marogong"
+    },
+    {
+      "value": "MASANTOL",
+      "label": "Masantol"
+    },
+    {
+      "value": "MASBATE CITY",
+      "label": "Masbate City"
+    },
+    {
+      "value": "MASINLOC",
+      "label": "Masinloc"
+    },
+    {
+      "value": "MASIU",
+      "label": "Masiu"
+    },
+    {
+      "value": "MASLOG",
+      "label": "Maslog"
+    },
+    {
+      "value": "MATAAS NA KAHOY",
+      "label": "Mataas Na Kahoy"
+    },
+    {
+      "value": "MATAG-OB",
+      "label": "Matag-Ob"
+    },
+    {
+      "value": "MATALAM",
+      "label": "Matalam"
+    },
+    {
+      "value": "MATALOM",
+      "label": "Matalom"
+    },
+    {
+      "value": "MATANAO",
+      "label": "Matanao"
+    },
+    {
+      "value": "MATANOG",
+      "label": "Matanog"
+    },
+    {
+      "value": "MATI CITY",
+      "label": "Mati City"
+    },
+    {
+      "value": "MATNOG",
+      "label": "Matnog"
+    },
+    {
+      "value": "MATUGUINAO",
+      "label": "Matuguinao"
+    },
+    {
+      "value": "MATUNGAO",
+      "label": "Matungao"
+    },
+    {
+      "value": "MAUBAN",
+      "label": "Mauban"
+    },
+    {
+      "value": "MAWAB",
+      "label": "Mawab"
+    },
+    {
+      "value": "MAYANTOC",
+      "label": "Mayantoc"
+    },
+    {
+      "value": "MAYDOLONG",
+      "label": "Maydolong"
+    },
+    {
+      "value": "MAYORGA",
+      "label": "Mayorga"
+    },
+    {
+      "value": "MAYOYAO",
+      "label": "Mayoyao"
+    },
+    {
+      "value": "MEDELLIN",
+      "label": "Medellin"
+    },
+    {
+      "value": "MEDINA",
+      "label": "Medina"
+    },
+    {
+      "value": "MENDEZ (MENDEZ-NUÑEZ)",
+      "label": "Mendez (Mendez-Nuñez)"
+    },
+    {
+      "value": "MERCEDES",
+      "label": "Mercedes"
+    },
+    {
+      "value": "MERIDA",
+      "label": "Merida"
+    },
+    {
+      "value": "MEXICO",
+      "label": "Mexico"
+    },
+    {
+      "value": "MEYCAUAYAN CITY",
+      "label": "Meycauayan City"
+    },
+    {
+      "value": "MIAGAO",
+      "label": "Miagao"
+    },
+    {
+      "value": "MIDSALIP",
+      "label": "Midsalip"
+    },
+    {
+      "value": "MIDSAYAP",
+      "label": "Midsayap"
+    },
+    {
+      "value": "MILAGROS",
+      "label": "Milagros"
+    },
+    {
+      "value": "MILAOR",
+      "label": "Milaor"
+    },
+    {
+      "value": "MINA",
+      "label": "Mina"
+    },
+    {
+      "value": "MINALABAC",
+      "label": "Minalabac"
+    },
+    {
+      "value": "MINALIN",
+      "label": "Minalin"
+    },
+    {
+      "value": "MINGLANILLA",
+      "label": "Minglanilla"
+    },
+    {
+      "value": "MOALBOAL",
+      "label": "Moalboal"
+    },
+    {
+      "value": "MOBO",
+      "label": "Mobo"
+    },
+    {
+      "value": "MOGPOG",
+      "label": "Mogpog"
+    },
+    {
+      "value": "MOISES PADILLA (MAGALLON)",
+      "label": "Moises Padilla (Magallon)"
+    },
+    {
+      "value": "MOLAVE",
+      "label": "Molave"
+    },
+    {
+      "value": "MONCADA",
+      "label": "Moncada"
+    },
+    {
+      "value": "MONDRAGON",
+      "label": "Mondragon"
+    },
+    {
+      "value": "MONKAYO",
+      "label": "Monkayo"
+    },
+    {
+      "value": "MONREAL",
+      "label": "Monreal"
+    },
+    {
+      "value": "MONTEVISTA",
+      "label": "Montevista"
+    },
+    {
+      "value": "MORONG",
+      "label": "Morong"
+    },
+    {
+      "value": "MOTIONG",
+      "label": "Motiong"
+    },
+    {
+      "value": "MULANAY",
+      "label": "Mulanay"
+    },
+    {
+      "value": "MULONDO",
+      "label": "Mulondo"
+    },
+    {
+      "value": "MUNAI",
+      "label": "Munai"
+    },
+    {
+      "value": "CITY OF MUNTINLUPA",
+      "label": "Muntinlupa"
+    },
+    {
+      "value": "MURCIA",
+      "label": "Murcia"
+    },
+    {
+      "value": "MUTIA",
+      "label": "Mutia"
+    },
+    {
+      "value": "NAAWAN",
+      "label": "Naawan"
+    },
+    {
+      "value": "NABAS",
+      "label": "Nabas"
+    },
+    {
+      "value": "NABUA",
+      "label": "Nabua"
+    },
+    {
+      "value": "NABUNTURAN",
+      "label": "Nabunturan"
+    },
+    {
+      "value": "NAGA",
+      "label": "Naga"
+    },
+    {
+      "value": "NAGA CITY",
+      "label": "Naga City"
+    },
+    {
+      "value": "NAGBUKEL",
+      "label": "Nagbukel"
+    },
+    {
+      "value": "NAGCARLAN",
+      "label": "Nagcarlan"
+    },
+    {
+      "value": "NAGTIPUNAN",
+      "label": "Nagtipunan"
+    },
+    {
+      "value": "NAGUILIAN",
+      "label": "Naguilian"
+    },
+    {
+      "value": "NAIC",
+      "label": "Naic"
+    },
+    {
+      "value": "NAMPICUAN",
+      "label": "Nampicuan"
+    },
+    {
+      "value": "NARRA",
+      "label": "Narra"
+    },
+    {
+      "value": "NARVACAN",
+      "label": "Narvacan"
+    },
+    {
+      "value": "NASIPIT",
+      "label": "Nasipit"
+    },
+    {
+      "value": "NASUGBU",
+      "label": "Nasugbu"
+    },
+    {
+      "value": "NATIVIDAD",
+      "label": "Natividad"
+    },
+    {
+      "value": "NATONIN",
+      "label": "Natonin"
+    },
+    {
+      "value": "NAUJAN",
+      "label": "Naujan"
+    },
+    {
+      "value": "NAVAL",
+      "label": "Naval"
+    },
+    {
+      "value": "NAVOTAS CITY",
+      "label": "Navotas City"
+    },
+    {
+      "value": "NEW BATAAN",
+      "label": "New Bataan"
+    },
+    {
+      "value": "NEW CORELLA",
+      "label": "New Corella"
+    },
+    {
+      "value": "NEW LUCENA",
+      "label": "New Lucena"
+    },
+    {
+      "value": "NEW WASHINGTON",
+      "label": "New Washington"
+    },
+    {
+      "value": "NORALA",
+      "label": "Norala"
+    },
+    {
+      "value": "NORTHERN KABUNTALAN",
+      "label": "Northern Kabuntalan"
+    },
+    {
+      "value": "NORZAGARAY",
+      "label": "Norzagaray"
+    },
+    {
+      "value": "NOVELETA",
+      "label": "Noveleta"
+    },
+    {
+      "value": "NUEVA ERA",
+      "label": "Nueva Era"
+    },
+    {
+      "value": "NUEVA VALENCIA",
+      "label": "Nueva Valencia"
+    },
+    {
+      "value": "NUMANCIA",
+      "label": "Numancia"
+    },
+    {
+      "value": "NUNUNGAN",
+      "label": "Nunungan"
+    },
+    {
+      "value": "OAS",
+      "label": "Oas"
+    },
+    {
+      "value": "OBANDO",
+      "label": "Obando"
+    },
+    {
+      "value": "OCAMPO",
+      "label": "Ocampo"
+    },
+    {
+      "value": "ODIONGAN",
+      "label": "Odiongan"
+    },
+    {
+      "value": "OLD PANAMAO",
+      "label": "Old Panamao"
+    },
+    {
+      "value": "OLONGAPO CITY",
+      "label": "Olongapo City"
+    },
+    {
+      "value": "OLUTANGA",
+      "label": "Olutanga"
+    },
+    {
+      "value": "OMAR",
+      "label": "Omar"
+    },
+    {
+      "value": "OPOL",
+      "label": "Opol"
+    },
+    {
+      "value": "ORANI",
+      "label": "Orani"
+    },
+    {
+      "value": "ORAS",
+      "label": "Oras"
+    },
+    {
+      "value": "ORION",
+      "label": "Orion"
+    },
+    {
+      "value": "ORMOC CITY",
+      "label": "Ormoc City"
+    },
+    {
+      "value": "OROQUIETA CITY",
+      "label": "Oroquieta City"
+    },
+    {
+      "value": "OSLOB",
+      "label": "Oslob"
+    },
+    {
+      "value": "OTON",
+      "label": "Oton"
+    },
+    {
+      "value": "OZAMIS CITY",
+      "label": "Ozamis City"
+    },
+    {
+      "value": "PACO",
+      "label": "Paco"
+    },
+    {
+      "value": "PADADA",
+      "label": "Padada"
+    },
+    {
+      "value": "PADRE BURGOS",
+      "label": "Padre Burgos"
+    },
+    {
+      "value": "PADRE GARCIA",
+      "label": "Padre Garcia"
+    },
+    {
+      "value": "PAETE",
+      "label": "Paete"
+    },
+    {
+      "value": "PAGADIAN CITY",
+      "label": "Pagadian City"
+    },
+    {
+      "value": "PAGAGAWAN",
+      "label": "Pagagawan"
+    },
+    {
+      "value": "PAGALUNGAN",
+      "label": "Pagalungan"
+    },
+    {
+      "value": "PAGAYAWAN (TATARIKAN)",
+      "label": "Pagayawan (Tatarikan)"
+    },
+    {
+      "value": "PAGBILAO",
+      "label": "Pagbilao"
+    },
+    {
+      "value": "PAGLAT",
+      "label": "Paglat"
+    },
+    {
+      "value": "PAGSANGHAN",
+      "label": "Pagsanghan"
+    },
+    {
+      "value": "PAGSANJAN",
+      "label": "Pagsanjan"
+    },
+    {
+      "value": "PAGUDPUD",
+      "label": "Pagudpud"
+    },
+    {
+      "value": "PAKIL",
+      "label": "Pakil"
+    },
+    {
+      "value": "PALANAN",
+      "label": "Palanan"
+    },
+    {
+      "value": "PALANAS",
+      "label": "Palanas"
+    },
+    {
+      "value": "PALAPAG",
+      "label": "Palapag"
+    },
+    {
+      "value": "PALAUIG",
+      "label": "Palauig"
+    },
+    {
+      "value": "PALAYAN CITY",
+      "label": "Palayan City"
+    },
+    {
+      "value": "PALIMBANG",
+      "label": "Palimbang"
+    },
+    {
+      "value": "PALO",
+      "label": "Palo"
+    },
+    {
+      "value": "PALOMPON",
+      "label": "Palompon"
+    },
+    {
+      "value": "PALUAN",
+      "label": "Paluan"
+    },
+    {
+      "value": "PAMBUJAN",
+      "label": "Pambujan"
+    },
+    {
+      "value": "PAMPLONA",
+      "label": "Pamplona"
+    },
+    {
+      "value": "PANABO CITY",
+      "label": "Panabo City"
+    },
+    {
+      "value": "PANAON",
+      "label": "Panaon"
+    },
+    {
+      "value": "PANAY",
+      "label": "Panay"
+    },
+    {
+      "value": "PANDACAN",
+      "label": "Pandacan"
+    },
+    {
+      "value": "PANDAG",
+      "label": "Pandag"
+    },
+    {
+      "value": "PANDAMI",
+      "label": "Pandami"
+    },
+    {
+      "value": "PANDAN",
+      "label": "Pandan"
+    },
+    {
+      "value": "PANDI",
+      "label": "Pandi"
+    },
+    {
+      "value": "PANGANIBAN (PAYO)",
+      "label": "Panganiban (Payo)"
+    },
+    {
+      "value": "PANGANTUCAN",
+      "label": "Pangantucan"
+    },
+    {
+      "value": "PANGIL",
+      "label": "Pangil"
+    },
+    {
+      "value": "PANGLAO",
+      "label": "Panglao"
+    },
+    {
+      "value": "PANGLIMA ESTINO (NEW PANAMAO)",
+      "label": "Panglima Estino (New Panamao)"
+    },
+    {
+      "value": "PANGLIMA SUGALA (BALIMBING)",
+      "label": "Panglima Sugala (Balimbing)"
+    },
+    {
+      "value": "PANGUTARAN",
+      "label": "Pangutaran"
+    },
+    {
+      "value": "PANIQUI",
+      "label": "Paniqui"
+    },
+    {
+      "value": "PANITAN",
+      "label": "Panitan"
+    },
+    {
+      "value": "PANTABANGAN",
+      "label": "Pantabangan"
+    },
+    {
+      "value": "PANTAO RAGAT",
+      "label": "Pantao Ragat"
+    },
+    {
+      "value": "PANTAR",
+      "label": "Pantar"
+    },
+    {
+      "value": "PANTUKAN",
+      "label": "Pantukan"
+    },
+    {
+      "value": "PANUKULAN",
+      "label": "Panukulan"
+    },
+    {
+      "value": "PAOAY",
+      "label": "Paoay"
+    },
+    {
+      "value": "PAOMBONG",
+      "label": "Paombong"
+    },
+    {
+      "value": "PARACALE",
+      "label": "Paracale"
+    },
+    {
+      "value": "PARACELIS",
+      "label": "Paracelis"
+    },
+    {
+      "value": "CITY OF PARAÑAQUE",
+      "label": "Parañaque"
+    },
+    {
+      "value": "PARANAS (WRIGHT)",
+      "label": "Paranas (Wright)"
+    },
+    {
+      "value": "PARANG",
+      "label": "Parang"
+    },
+    {
+      "value": "PASACAO",
+      "label": "Pasacao"
+    },
+    {
+      "value": "PASAY CITY",
+      "label": "Pasay City"
+    },
+    {
+      "value": "CITY OF PASIG",
+      "label": "Pasig"
+    },
+    {
+      "value": "PASIL",
+      "label": "Pasil"
+    },
+    {
+      "value": "CITY OF PASSI",
+      "label": "Passi"
+    },
+    {
+      "value": "PASTRANA",
+      "label": "Pastrana"
+    },
+    {
+      "value": "PASUQUIN",
+      "label": "Pasuquin"
+    },
+    {
+      "value": "PATA",
+      "label": "Pata"
+    },
+    {
+      "value": "PATEROS",
+      "label": "Pateros"
+    },
+    {
+      "value": "PATIKUL",
+      "label": "Patikul"
+    },
+    {
+      "value": "PATNANUNGAN",
+      "label": "Patnanungan"
+    },
+    {
+      "value": "PATNONGON",
+      "label": "Patnongon"
+    },
+    {
+      "value": "PAVIA",
+      "label": "Pavia"
+    },
+    {
+      "value": "PAYAO",
+      "label": "Payao"
+    },
+    {
+      "value": "PEÑABLANCA",
+      "label": "Peñablanca"
+    },
+    {
+      "value": "PEÑARANDA",
+      "label": "Peñaranda"
+    },
+    {
+      "value": "PEÑARRUBIA",
+      "label": "Peñarrubia"
+    },
+    {
+      "value": "PEREZ",
+      "label": "Perez"
+    },
+    {
+      "value": "PIAGAPO",
+      "label": "Piagapo"
+    },
+    {
+      "value": "PIAT",
+      "label": "Piat"
+    },
+    {
+      "value": "PICONG (SULTAN GUMANDER)",
+      "label": "Picong (Sultan Gumander)"
+    },
+    {
+      "value": "PIDDIG",
+      "label": "Piddig"
+    },
+    {
+      "value": "PIDIGAN",
+      "label": "Pidigan"
+    },
+    {
+      "value": "PIGKAWAYAN",
+      "label": "Pigkawayan"
+    },
+    {
+      "value": "PIKIT",
+      "label": "Pikit"
+    },
+    {
+      "value": "PILA",
+      "label": "Pila"
+    },
+    {
+      "value": "PILAR",
+      "label": "Pilar"
+    },
+    {
+      "value": "PILI",
+      "label": "Pili"
+    },
+    {
+      "value": "PILILLA",
+      "label": "Pililla"
+    },
+    {
+      "value": "PINABACDAO",
+      "label": "Pinabacdao"
+    },
+    {
+      "value": "PINAMALAYAN",
+      "label": "Pinamalayan"
+    },
+    {
+      "value": "PINAMUNGAHAN",
+      "label": "Pinamungahan"
+    },
+    {
+      "value": "PIÑAN (NEW PIÑAN)",
+      "label": "Piñan (New Piñan)"
+    },
+    {
+      "value": "PINILI",
+      "label": "Pinili"
+    },
+    {
+      "value": "PINTUYAN",
+      "label": "Pintuyan"
+    },
+    {
+      "value": "PINUKPUK",
+      "label": "Pinukpuk"
+    },
+    {
+      "value": "PIO DURAN",
+      "label": "Pio Duran"
+    },
+    {
+      "value": "PIO V. CORPUZ (LIMBUHAN)",
+      "label": "Pio V. Corpuz (Limbuhan)"
+    },
+    {
+      "value": "PITOGO",
+      "label": "Pitogo"
+    },
+    {
+      "value": "PLACER",
+      "label": "Placer"
+    },
+    {
+      "value": "PLARIDEL",
+      "label": "Plaridel"
+    },
+    {
+      "value": "POLA",
+      "label": "Pola"
+    },
+    {
+      "value": "POLANCO",
+      "label": "Polanco"
+    },
+    {
+      "value": "POLANGUI",
+      "label": "Polangui"
+    },
+    {
+      "value": "POLILLO",
+      "label": "Polillo"
+    },
+    {
+      "value": "POLOMOLOK",
+      "label": "Polomolok"
+    },
+    {
+      "value": "PONTEVEDRA",
+      "label": "Pontevedra"
+    },
+    {
+      "value": "POONA BAYABAO (GATA)",
+      "label": "Poona Bayabao (Gata)"
+    },
+    {
+      "value": "POONA PIAGAPO",
+      "label": "Poona Piagapo"
+    },
+    {
+      "value": "PORAC",
+      "label": "Porac"
+    },
+    {
+      "value": "PORO",
+      "label": "Poro"
+    },
+    {
+      "value": "PORT AREA",
+      "label": "Port Area"
+    },
+    {
+      "value": "POTOTAN",
+      "label": "Pototan"
+    },
+    {
+      "value": "POZORRUBIO",
+      "label": "Pozorrubio"
+    },
+    {
+      "value": "PRES. CARLOS P. GARCIA (PITOGO)",
+      "label": "Pres. Carlos P. Garcia (Pitogo)"
+    },
+    {
+      "value": "PRES. MANUEL A. ROXAS",
+      "label": "Pres. Manuel A. Roxas"
+    },
+    {
+      "value": "PRESENTACION (PARUBCAN)",
+      "label": "Presentacion (Parubcan)"
+    },
+    {
+      "value": "PRESIDENT QUIRINO",
+      "label": "President Quirino"
+    },
+    {
+      "value": "PRESIDENT ROXAS",
+      "label": "President Roxas"
+    },
+    {
+      "value": "PRIETO DIAZ",
+      "label": "Prieto Diaz"
+    },
+    {
+      "value": "PROSPERIDAD",
+      "label": "Prosperidad"
+    },
+    {
+      "value": "PUALAS",
+      "label": "Pualas"
+    },
+    {
+      "value": "PUDTOL",
+      "label": "Pudtol"
+    },
+    {
+      "value": "PUERTO GALERA",
+      "label": "Puerto Galera"
+    },
+    {
+      "value": "PUERTO PRINCESA CITY",
+      "label": "Puerto Princesa City"
+    },
+    {
+      "value": "PUGO",
+      "label": "Pugo"
+    },
+    {
+      "value": "PULILAN",
+      "label": "Pulilan"
+    },
+    {
+      "value": "PULUPANDAN",
+      "label": "Pulupandan"
+    },
+    {
+      "value": "PURA",
+      "label": "Pura"
+    },
+    {
+      "value": "QUEZON",
+      "label": "Quezon"
+    },
+    {
+      "value": "QUEZON CITY",
+      "label": "Quezon City"
+    },
+    {
+      "value": "QUIAPO",
+      "label": "Quiapo"
+    },
+    {
+      "value": "QUINAPONDAN",
+      "label": "Quinapondan"
+    },
+    {
+      "value": "QUIRINO",
+      "label": "Quirino"
+    },
+    {
+      "value": "QUIRINO (ANGKAKI)",
+      "label": "Quirino (Angkaki)"
+    },
+    {
+      "value": "RAGAY",
+      "label": "Ragay"
+    },
+    {
+      "value": "RAJAH BUAYAN",
+      "label": "Rajah Buayan"
+    },
+    {
+      "value": "RAMON",
+      "label": "Ramon"
+    },
+    {
+      "value": "RAMON MAGSAYSAY (LIARGO)",
+      "label": "Ramon Magsaysay (Liargo)"
+    },
+    {
+      "value": "RAMOS",
+      "label": "Ramos"
+    },
+    {
+      "value": "RAPU-RAPU",
+      "label": "Rapu-Rapu"
+    },
+    {
+      "value": "REAL",
+      "label": "Real"
+    },
+    {
+      "value": "REINA MERCEDES",
+      "label": "Reina Mercedes"
+    },
+    {
+      "value": "REMEDIOS T. ROMUALDEZ",
+      "label": "Remedios T. Romualdez"
+    },
+    {
+      "value": "RIZAL",
+      "label": "Rizal"
+    },
+    {
+      "value": "RIZAL (LIWAN)",
+      "label": "Rizal (Liwan)"
+    },
+    {
+      "value": "RIZAL (MARCOS)",
+      "label": "Rizal (Marcos)"
+    },
+    {
+      "value": "RODRIGUEZ (MONTALBAN)",
+      "label": "Rodriguez (Montalban)"
+    },
+    {
+      "value": "ROMBLON",
+      "label": "Romblon"
+    },
+    {
+      "value": "RONDA",
+      "label": "Ronda"
+    },
+    {
+      "value": "ROSALES",
+      "label": "Rosales"
+    },
+    {
+      "value": "ROSARIO",
+      "label": "Rosario"
+    },
+    {
+      "value": "ROSELLER LIM",
+      "label": "Roseller Lim"
+    },
+    {
+      "value": "ROXAS",
+      "label": "Roxas"
+    },
+    {
+      "value": "ROXAS CITY",
+      "label": "Roxas City"
+    },
+    {
+      "value": "SABANGAN",
+      "label": "Sabangan"
+    },
+    {
+      "value": "SABLAN",
+      "label": "Sablan"
+    },
+    {
+      "value": "SABLAYAN",
+      "label": "Sablayan"
+    },
+    {
+      "value": "SABTANG",
+      "label": "Sabtang"
+    },
+    {
+      "value": "SADANGA",
+      "label": "Sadanga"
+    },
+    {
+      "value": "SAGADA",
+      "label": "Sagada"
+    },
+    {
+      "value": "SAGAY",
+      "label": "Sagay"
+    },
+    {
+      "value": "SAGAY CITY",
+      "label": "Sagay City"
+    },
+    {
+      "value": "SAGBAYAN (BORJA)",
+      "label": "Sagbayan (Borja)"
+    },
+    {
+      "value": "SAGÑAY",
+      "label": "Sagñay"
+    },
+    {
+      "value": "SAGUDAY",
+      "label": "Saguday"
+    },
+    {
+      "value": "SAGUIARAN",
+      "label": "Saguiaran"
+    },
+    {
+      "value": "SAINT BERNARD",
+      "label": "Saint Bernard"
+    },
+    {
+      "value": "SALAY",
+      "label": "Salay"
+    },
+    {
+      "value": "SALCEDO",
+      "label": "Salcedo"
+    },
+    {
+      "value": "SALCEDO (BAUGEN)",
+      "label": "Salcedo (Baugen)"
+    },
+    {
+      "value": "SALLAPADAN",
+      "label": "Sallapadan"
+    },
+    {
+      "value": "SALUG",
+      "label": "Salug"
+    },
+    {
+      "value": "SALVADOR",
+      "label": "Salvador"
+    },
+    {
+      "value": "SALVADOR BENEDICTO",
+      "label": "Salvador Benedicto"
+    },
+    {
+      "value": "SAMAL",
+      "label": "Samal"
+    },
+    {
+      "value": "SAMBOAN",
+      "label": "Samboan"
+    },
+    {
+      "value": "SAMPALOC",
+      "label": "Sampaloc"
+    },
+    {
+      "value": "SAN AGUSTIN",
+      "label": "San Agustin"
+    },
+    {
+      "value": "SAN ANDRES",
+      "label": "San Andres"
+    },
+    {
+      "value": "SAN ANDRES (CALOLBON)",
+      "label": "San Andres (Calolbon)"
+    },
+    {
+      "value": "SAN ANTONIO",
+      "label": "San Antonio"
+    },
+    {
+      "value": "SAN BENITO",
+      "label": "San Benito"
+    },
+    {
+      "value": "SAN CARLOS CITY",
+      "label": "San Carlos City"
+    },
+    {
+      "value": "SAN CLEMENTE",
+      "label": "San Clemente"
+    },
+    {
+      "value": "SAN DIONISIO",
+      "label": "San Dionisio"
+    },
+    {
+      "value": "SAN EMILIO",
+      "label": "San Emilio"
+    },
+    {
+      "value": "SAN ENRIQUE",
+      "label": "San Enrique"
+    },
+    {
+      "value": "SAN ESTEBAN",
+      "label": "San Esteban"
+    },
+    {
+      "value": "SAN FABIAN",
+      "label": "San Fabian"
+    },
+    {
+      "value": "SAN FELIPE",
+      "label": "San Felipe"
+    },
+    {
+      "value": "SAN FERNANDO",
+      "label": "San Fernando"
+    },
+    {
+      "value": "SAN FERNANDO CITY",
+      "label": "San Fernando City"
+    },
+    {
+      "value": "SAN FRANCISCO",
+      "label": "San Francisco"
+    },
+    {
+      "value": "SAN FRANCISCO (ANAO-AON)",
+      "label": "San Francisco (Anao-Aon)"
+    },
+    {
+      "value": "SAN FRANCISCO (AURORA)",
+      "label": "San Francisco (Aurora)"
+    },
+    {
+      "value": "SAN GABRIEL",
+      "label": "San Gabriel"
+    },
+    {
+      "value": "SAN GUILLERMO",
+      "label": "San Guillermo"
+    },
+    {
+      "value": "SAN ILDEFONSO",
+      "label": "San Ildefonso"
+    },
+    {
+      "value": "SAN ISIDRO",
+      "label": "San Isidro"
+    },
+    {
+      "value": "SAN JACINTO",
+      "label": "San Jacinto"
+    },
+    {
+      "value": "SAN JOAQUIN",
+      "label": "San Joaquin"
+    },
+    {
+      "value": "SAN JORGE",
+      "label": "San Jorge"
+    },
+    {
+      "value": "SAN JOSE",
+      "label": "San Jose"
+    },
+    {
+      "value": "SAN JOSE CITY",
+      "label": "San Jose City"
+    },
+    {
+      "value": "SAN JOSE DE BUAN",
+      "label": "San Jose De Buan"
+    },
+    {
+      "value": "SAN JOSE DEL MONTE CITY",
+      "label": "San Jose Del Monte City"
+    },
+    {
+      "value": "SAN JUAN",
+      "label": "San Juan"
+    },
+    {
+      "value": "SAN JUAN (CABALIAN)",
+      "label": "San Juan (Cabalian)"
+    },
+    {
+      "value": "SAN JUAN (LAPOG)",
+      "label": "San Juan (Lapog)"
+    },
+    {
+      "value": "SAN JUAN CITY",
+      "label": "San Juan City"
+    },
+    {
+      "value": "SAN JULIAN",
+      "label": "San Julian"
+    },
+    {
+      "value": "SAN LEONARDO",
+      "label": "San Leonardo"
+    },
+    {
+      "value": "SAN LORENZO",
+      "label": "San Lorenzo"
+    },
+    {
+      "value": "SAN LORENZO RUIZ (IMELDA)",
+      "label": "San Lorenzo Ruiz (Imelda)"
+    },
+    {
+      "value": "SAN LUIS",
+      "label": "San Luis"
+    },
+    {
+      "value": "SAN MANUEL",
+      "label": "San Manuel"
+    },
+    {
+      "value": "SAN MARCELINO",
+      "label": "San Marcelino"
+    },
+    {
+      "value": "SAN MARIANO",
+      "label": "San Mariano"
+    },
+    {
+      "value": "SAN MATEO",
+      "label": "San Mateo"
+    },
+    {
+      "value": "SAN MIGUEL",
+      "label": "San Miguel"
+    },
+    {
+      "value": "SAN NARCISO",
+      "label": "San Narciso"
+    },
+    {
+      "value": "SAN NICOLAS",
+      "label": "San Nicolas"
+    },
+    {
+      "value": "SAN PABLO",
+      "label": "San Pablo"
+    },
+    {
+      "value": "SAN PABLO CITY",
+      "label": "San Pablo City"
+    },
+    {
+      "value": "SAN PASCUAL",
+      "label": "San Pascual"
+    },
+    {
+      "value": "SAN PEDRO CITY",
+      "label": "San Pedro City"
+    },
+    {
+      "value": "SAN POLICARPO",
+      "label": "San Policarpo"
+    },
+    {
+      "value": "SAN QUINTIN",
+      "label": "San Quintin"
+    },
+    {
+      "value": "SAN RAFAEL",
+      "label": "San Rafael"
+    },
+    {
+      "value": "SAN REMIGIO",
+      "label": "San Remigio"
+    },
+    {
+      "value": "SAN RICARDO",
+      "label": "San Ricardo"
+    },
+    {
+      "value": "SAN ROQUE",
+      "label": "San Roque"
+    },
+    {
+      "value": "SAN SEBASTIAN",
+      "label": "San Sebastian"
+    },
+    {
+      "value": "SAN SIMON",
+      "label": "San Simon"
+    },
+    {
+      "value": "SAN TEODORO",
+      "label": "San Teodoro"
+    },
+    {
+      "value": "SAN VICENTE",
+      "label": "San Vicente"
+    },
+    {
+      "value": "SANCHEZ-MIRA",
+      "label": "Sanchez-Mira"
+    },
+    {
+      "value": "SANTA",
+      "label": "Santa"
+    },
+    {
+      "value": "SANTA ANA",
+      "label": "Santa Ana"
+    },
+    {
+      "value": "SANTA BARBARA",
+      "label": "Santa Barbara"
+    },
+    {
+      "value": "SANTA CATALINA",
+      "label": "Santa Catalina"
+    },
+    {
+      "value": "SANTA CRUZ",
+      "label": "Santa Cruz"
+    },
+    {
+      "value": "SANTA ELENA",
+      "label": "Santa Elena"
+    },
+    {
+      "value": "SANTA FE",
+      "label": "Santa Fe"
+    },
+    {
+      "value": "SANTA IGNACIA",
+      "label": "Santa Ignacia"
+    },
+    {
+      "value": "SANTA JOSEFA",
+      "label": "Santa Josefa"
+    },
+    {
+      "value": "SANTA LUCIA",
+      "label": "Santa Lucia"
+    },
+    {
+      "value": "SANTA MAGDALENA",
+      "label": "Santa Magdalena"
+    },
+    {
+      "value": "SANTA MARCELA",
+      "label": "Santa Marcela"
+    },
+    {
+      "value": "SANTA MARGARITA",
+      "label": "Santa Margarita"
+    },
+    {
+      "value": "SANTA MARIA",
+      "label": "Santa Maria"
+    },
+    {
+      "value": "SANTA MARIA (IMELDA)",
+      "label": "Santa Maria (Imelda)"
+    },
+    {
+      "value": "SANTA MONICA (SAPAO)",
+      "label": "Santa Monica (Sapao)"
+    },
+    {
+      "value": "SANTA PRAXEDES",
+      "label": "Santa Praxedes"
+    },
+    {
+      "value": "SANTA RITA",
+      "label": "Santa Rita"
+    },
+    {
+      "value": "SANTA ROSA",
+      "label": "Santa Rosa"
+    },
+    {
+      "value": "SANTA ROSA CITY",
+      "label": "Santa Rosa City"
+    },
+    {
+      "value": "SANTA TERESITA",
+      "label": "Santa Teresita"
+    },
+    {
+      "value": "SANTANDER",
+      "label": "Santander"
+    },
+    {
+      "value": "SANTIAGO",
+      "label": "Santiago"
+    },
+    {
+      "value": "SANTO DOMINGO",
+      "label": "Santo Domingo"
+    },
+    {
+      "value": "SANTO DOMINGO (LIBOG)",
+      "label": "Santo Domingo (Libog)"
+    },
+    {
+      "value": "SANTO NIÑO",
+      "label": "Santo Niño"
+    },
+    {
+      "value": "SANTO NIÑO (FAIRE)",
+      "label": "Santo Niño (Faire)"
+    },
+    {
+      "value": "SANTO TOMAS",
+      "label": "Santo Tomas"
+    },
+    {
+      "value": "SANTOL",
+      "label": "Santol"
+    },
+    {
+      "value": "SAPA-SAPA",
+      "label": "Sapa-Sapa"
+    },
+    {
+      "value": "SAPAD",
+      "label": "Sapad"
+    },
+    {
+      "value": "SAPANG DALAGA",
+      "label": "Sapang Dalaga"
+    },
+    {
+      "value": "SAPI-AN",
+      "label": "Sapi-An"
+    },
+    {
+      "value": "SARA",
+      "label": "Sara"
+    },
+    {
+      "value": "SARANGANI",
+      "label": "Sarangani"
+    },
+    {
+      "value": "SARIAYA",
+      "label": "Sariaya"
+    },
+    {
+      "value": "SARRAT",
+      "label": "Sarrat"
+    },
+    {
+      "value": "SASMUAN (SEXMOAN)",
+      "label": "Sasmuan (Sexmoan)"
+    },
+    {
+      "value": "SCIENCE CITY OF MUÑOZ",
+      "label": "Science Muñoz"
+    },
+    {
+      "value": "SEBASTE",
+      "label": "Sebaste"
+    },
+    {
+      "value": "SEN. NINOY AQUINO",
+      "label": "Sen. Ninoy Aquino"
+    },
+    {
+      "value": "SERGIO OSMEÑA SR.",
+      "label": "Sergio Osmeña Sr."
+    },
+    {
+      "value": "SEVILLA",
+      "label": "Sevilla"
+    },
+    {
+      "value": "SHARIFF AGUAK (MAGANOY)",
+      "label": "Shariff Aguak (Maganoy)"
+    },
+    {
+      "value": "SHARIFF SAYDONA MUSTAPHA",
+      "label": "Shariff Saydona Mustapha"
+    },
+    {
+      "value": "SIASI",
+      "label": "Siasi"
+    },
+    {
+      "value": "SIATON",
+      "label": "Siaton"
+    },
+    {
+      "value": "SIAY",
+      "label": "Siay"
+    },
+    {
+      "value": "SIAYAN",
+      "label": "Siayan"
+    },
+    {
+      "value": "SIBAGAT",
+      "label": "Sibagat"
+    },
+    {
+      "value": "SIBALOM",
+      "label": "Sibalom"
+    },
+    {
+      "value": "SIBONGA",
+      "label": "Sibonga"
+    },
+    {
+      "value": "SIBUCO",
+      "label": "Sibuco"
+    },
+    {
+      "value": "SIBULAN",
+      "label": "Sibulan"
+    },
+    {
+      "value": "SIBUNAG",
+      "label": "Sibunag"
+    },
+    {
+      "value": "SIBUTAD",
+      "label": "Sibutad"
+    },
+    {
+      "value": "SIBUTU",
+      "label": "Sibutu"
+    },
+    {
+      "value": "SIERRA BULLONES",
+      "label": "Sierra Bullones"
+    },
+    {
+      "value": "SIGAY",
+      "label": "Sigay"
+    },
+    {
+      "value": "SIGMA",
+      "label": "Sigma"
+    },
+    {
+      "value": "SIKATUNA",
+      "label": "Sikatuna"
+    },
+    {
+      "value": "SILAGO",
+      "label": "Silago"
+    },
+    {
+      "value": "SILANG",
+      "label": "Silang"
+    },
+    {
+      "value": "SILAY CITY",
+      "label": "Silay City"
+    },
+    {
+      "value": "SILVINO LOBOS",
+      "label": "Silvino Lobos"
+    },
+    {
+      "value": "SIMUNUL",
+      "label": "Simunul"
+    },
+    {
+      "value": "SINACABAN",
+      "label": "Sinacaban"
+    },
+    {
+      "value": "SINAIT",
+      "label": "Sinait"
+    },
+    {
+      "value": "SINDANGAN",
+      "label": "Sindangan"
+    },
+    {
+      "value": "SINILOAN",
+      "label": "Siniloan"
+    },
+    {
+      "value": "SIOCON",
+      "label": "Siocon"
+    },
+    {
+      "value": "SIPALAY CITY",
+      "label": "Sipalay City"
+    },
+    {
+      "value": "SIPOCOT",
+      "label": "Sipocot"
+    },
+    {
+      "value": "SIQUIJOR",
+      "label": "Siquijor"
+    },
+    {
+      "value": "SIRAWAI",
+      "label": "Sirawai"
+    },
+    {
+      "value": "SIRUMA",
+      "label": "Siruma"
+    },
+    {
+      "value": "SISON",
+      "label": "Sison"
+    },
+    {
+      "value": "SITANGKAI",
+      "label": "Sitangkai"
+    },
+    {
+      "value": "SOCORRO",
+      "label": "Socorro"
+    },
+    {
+      "value": "SOFRONIO ESPAÑOLA",
+      "label": "Sofronio Española"
+    },
+    {
+      "value": "SOGOD",
+      "label": "Sogod"
+    },
+    {
+      "value": "SOLANA",
+      "label": "Solana"
+    },
+    {
+      "value": "SOLANO",
+      "label": "Solano"
+    },
+    {
+      "value": "SOLSONA",
+      "label": "Solsona"
+    },
+    {
+      "value": "SOMINOT (DON MARIANO MARCOS)",
+      "label": "Sominot (Don Mariano Marcos)"
+    },
+    {
+      "value": "SORSOGON CITY",
+      "label": "Sorsogon City"
+    },
+    {
+      "value": "SOUTH UBIAN",
+      "label": "South Ubian"
+    },
+    {
+      "value": "SOUTH UPI",
+      "label": "South Upi"
+    },
+    {
+      "value": "SUAL",
+      "label": "Sual"
+    },
+    {
+      "value": "SUBIC",
+      "label": "Subic"
+    },
+    {
+      "value": "SUDIPEN",
+      "label": "Sudipen"
+    },
+    {
+      "value": "SUGBONGCOGON",
+      "label": "Sugbongcogon"
+    },
+    {
+      "value": "SUGPON",
+      "label": "Sugpon"
+    },
+    {
+      "value": "SULAT",
+      "label": "Sulat"
+    },
+    {
+      "value": "SULOP",
+      "label": "Sulop"
+    },
+    {
+      "value": "SULTAN DUMALONDONG",
+      "label": "Sultan Dumalondong"
+    },
+    {
+      "value": "SULTAN KUDARAT (NULING)",
+      "label": "Sultan Kudarat (Nuling)"
+    },
+    {
+      "value": "SULTAN MASTURA",
+      "label": "Sultan Mastura"
+    },
+    {
+      "value": "SULTAN NAGA DIMAPORO (KAROMATAN)",
+      "label": "Sultan Naga Dimaporo (Karomatan)"
+    },
+    {
+      "value": "SULTAN SA BARONGIS (LAMBAYONG)",
+      "label": "Sultan Sa Barongis (Lambayong)"
+    },
+    {
+      "value": "SUMILAO",
+      "label": "Sumilao"
+    },
+    {
+      "value": "SUMISIP",
+      "label": "Sumisip"
+    },
+    {
+      "value": "SURALLAH",
+      "label": "Surallah"
+    },
+    {
+      "value": "SURIGAO CITY",
+      "label": "Surigao City"
+    },
+    {
+      "value": "SUYO",
+      "label": "Suyo"
+    },
+    {
+      "value": "T`BOLI",
+      "label": "T`Boli"
+    },
+    {
+      "value": "TAAL",
+      "label": "Taal"
+    },
+    {
+      "value": "TABACO CITY",
+      "label": "Tabaco City"
+    },
+    {
+      "value": "TABANGO",
+      "label": "Tabango"
+    },
+    {
+      "value": "TABINA",
+      "label": "Tabina"
+    },
+    {
+      "value": "TABOGON",
+      "label": "Tabogon"
+    },
+    {
+      "value": "TABONTABON",
+      "label": "Tabontabon"
+    },
+    {
+      "value": "TABUAN-LASA",
+      "label": "Tabuan-Lasa"
+    },
+    {
+      "value": "TABUELAN",
+      "label": "Tabuelan"
+    },
+    {
+      "value": "TABUK CITY",
+      "label": "Tabuk City"
+    },
+    {
+      "value": "TACLOBAN CITY",
+      "label": "Tacloban City"
+    },
+    {
+      "value": "TACURONG CITY",
+      "label": "Tacurong City"
+    },
+    {
+      "value": "TADIAN",
+      "label": "Tadian"
+    },
+    {
+      "value": "TAFT",
+      "label": "Taft"
+    },
+    {
+      "value": "TAGANA-AN",
+      "label": "Tagana-An"
+    },
+    {
+      "value": "TAGAPUL-AN",
+      "label": "Tagapul-An"
+    },
+    {
+      "value": "TAGAYTAY CITY",
+      "label": "Tagaytay City"
+    },
+    {
+      "value": "TAGBILARAN CITY",
+      "label": "Tagbilaran City"
+    },
+    {
+      "value": "TAGBINA",
+      "label": "Tagbina"
+    },
+    {
+      "value": "TAGKAWAYAN",
+      "label": "Tagkawayan"
+    },
+    {
+      "value": "TAGO",
+      "label": "Tago"
+    },
+    {
+      "value": "TAGOLOAN",
+      "label": "Tagoloan"
+    },
+    {
+      "value": "TAGUDIN",
+      "label": "Tagudin"
+    },
+    {
+      "value": "TAGUIG",
+      "label": "Taguig"
+    },
+    {
+      "value": "CITY OF TAGUM",
+      "label": "Tagum"
+    },
+    {
+      "value": "TALACOGON",
+      "label": "Talacogon"
+    },
+    {
+      "value": "TALAINGOD",
+      "label": "Talaingod"
+    },
+    {
+      "value": "TALAKAG",
+      "label": "Talakag"
+    },
+    {
+      "value": "TALALORA",
+      "label": "Talalora"
+    },
+    {
+      "value": "TALAVERA",
+      "label": "Talavera"
+    },
+    {
+      "value": "TALAYAN",
+      "label": "Talayan"
+    },
+    {
+      "value": "TALIBON",
+      "label": "Talibon"
+    },
+    {
+      "value": "TALIPAO",
+      "label": "Talipao"
+    },
+    {
+      "value": "TALISAY",
+      "label": "Talisay"
+    },
+    {
+      "value": "TALISAY CITY",
+      "label": "Talisay City"
+    },
+    {
+      "value": "TALISAYAN",
+      "label": "Talisayan"
+    },
+    {
+      "value": "TALITAY",
+      "label": "Talitay"
+    },
+    {
+      "value": "TALUGTUG",
+      "label": "Talugtug"
+    },
+    {
+      "value": "TALUSAN",
+      "label": "Talusan"
+    },
+    {
+      "value": "TAMBULIG",
+      "label": "Tambulig"
+    },
+    {
+      "value": "TAMPAKAN",
+      "label": "Tampakan"
+    },
+    {
+      "value": "TAMPARAN",
+      "label": "Tamparan"
+    },
+    {
+      "value": "TAMPILISAN",
+      "label": "Tampilisan"
+    },
+    {
+      "value": "TANAUAN",
+      "label": "Tanauan"
+    },
+    {
+      "value": "TANAUAN CITY",
+      "label": "Tanauan City"
+    },
+    {
+      "value": "TANAY",
+      "label": "Tanay"
+    },
+    {
+      "value": "TANDAG CITY",
+      "label": "Tandag City"
+    },
+    {
+      "value": "TANDUBAS",
+      "label": "Tandubas"
+    },
+    {
+      "value": "TANGALAN",
+      "label": "Tangalan"
+    },
+    {
+      "value": "TANGCAL",
+      "label": "Tangcal"
+    },
+    {
+      "value": "TANGUB CITY",
+      "label": "Tangub City"
+    },
+    {
+      "value": "TANJAY CITY",
+      "label": "Tanjay City"
+    },
+    {
+      "value": "TANTANGAN",
+      "label": "Tantangan"
+    },
+    {
+      "value": "TANUDAN",
+      "label": "Tanudan"
+    },
+    {
+      "value": "TANZA",
+      "label": "Tanza"
+    },
+    {
+      "value": "TAPAZ",
+      "label": "Tapaz"
+    },
+    {
+      "value": "TAPUL",
+      "label": "Tapul"
+    },
+    {
+      "value": "TARAKA",
+      "label": "Taraka"
+    },
+    {
+      "value": "TARANGNAN",
+      "label": "Tarangnan"
+    },
+    {
+      "value": "CITY OF TARLAC",
+      "label": "Tarlac"
+    },
+    {
+      "value": "TARRAGONA",
+      "label": "Tarragona"
+    },
+    {
+      "value": "TAYABAS CITY",
+      "label": "Tayabas City"
+    },
+    {
+      "value": "TAYASAN",
+      "label": "Tayasan"
+    },
+    {
+      "value": "TAYSAN",
+      "label": "Taysan"
+    },
+    {
+      "value": "TAYTAY",
+      "label": "Taytay"
+    },
+    {
+      "value": "TAYUG",
+      "label": "Tayug"
+    },
+    {
+      "value": "TAYUM",
+      "label": "Tayum"
+    },
+    {
+      "value": "TERESA",
+      "label": "Teresa"
+    },
+    {
+      "value": "TERNATE",
+      "label": "Ternate"
+    },
+    {
+      "value": "TIAONG",
+      "label": "Tiaong"
+    },
+    {
+      "value": "TIBIAO",
+      "label": "Tibiao"
+    },
+    {
+      "value": "TIGAON",
+      "label": "Tigaon"
+    },
+    {
+      "value": "TIGBAO",
+      "label": "Tigbao"
+    },
+    {
+      "value": "TIGBAUAN",
+      "label": "Tigbauan"
+    },
+    {
+      "value": "TINAMBAC",
+      "label": "Tinambac"
+    },
+    {
+      "value": "TINEG",
+      "label": "Tineg"
+    },
+    {
+      "value": "TINGLAYAN",
+      "label": "Tinglayan"
+    },
+    {
+      "value": "TINGLOY",
+      "label": "Tingloy"
+    },
+    {
+      "value": "TINOC",
+      "label": "Tinoc"
+    },
+    {
+      "value": "TIPO-TIPO",
+      "label": "Tipo-Tipo"
+    },
+    {
+      "value": "TITAY",
+      "label": "Titay"
+    },
+    {
+      "value": "TIWI",
+      "label": "Tiwi"
+    },
+    {
+      "value": "TOBIAS FORNIER (DAO)",
+      "label": "Tobias Fornier (Dao)"
+    },
+    {
+      "value": "TOBOSO",
+      "label": "Toboso"
+    },
+    {
+      "value": "TOLEDO CITY",
+      "label": "Toledo City"
+    },
+    {
+      "value": "TOLOSA",
+      "label": "Tolosa"
+    },
+    {
+      "value": "TOMAS OPPUS",
+      "label": "Tomas Oppus"
+    },
+    {
+      "value": "TONDO",
+      "label": "Tondo"
+    },
+    {
+      "value": "TONGKIL",
+      "label": "Tongkil"
+    },
+    {
+      "value": "TORRIJOS",
+      "label": "Torrijos"
+    },
+    {
+      "value": "TRECE MARTIRES CITY",
+      "label": "Trece Martires City"
+    },
+    {
+      "value": "TRENTO",
+      "label": "Trento"
+    },
+    {
+      "value": "TRINIDAD",
+      "label": "Trinidad"
+    },
+    {
+      "value": "TUAO",
+      "label": "Tuao"
+    },
+    {
+      "value": "TUBA",
+      "label": "Tuba"
+    },
+    {
+      "value": "TUBAJON",
+      "label": "Tubajon"
+    },
+    {
+      "value": "TUBAO",
+      "label": "Tubao"
+    },
+    {
+      "value": "TUBARAN",
+      "label": "Tubaran"
+    },
+    {
+      "value": "TUBAY",
+      "label": "Tubay"
+    },
+    {
+      "value": "TUBIGON",
+      "label": "Tubigon"
+    },
+    {
+      "value": "TUBLAY",
+      "label": "Tublay"
+    },
+    {
+      "value": "TUBO",
+      "label": "Tubo"
+    },
+    {
+      "value": "TUBOD",
+      "label": "Tubod"
+    },
+    {
+      "value": "TUBUNGAN",
+      "label": "Tubungan"
+    },
+    {
+      "value": "TUBURAN",
+      "label": "Tuburan"
+    },
+    {
+      "value": "TUDELA",
+      "label": "Tudela"
+    },
+    {
+      "value": "TUGAYA",
+      "label": "Tugaya"
+    },
+    {
+      "value": "TUGUEGARAO CITY",
+      "label": "Tuguegarao City"
+    },
+    {
+      "value": "TUKURAN",
+      "label": "Tukuran"
+    },
+    {
+      "value": "TULUNAN",
+      "label": "Tulunan"
+    },
+    {
+      "value": "TUMAUINI",
+      "label": "Tumauini"
+    },
+    {
+      "value": "TUNGA",
+      "label": "Tunga"
+    },
+    {
+      "value": "TUNGAWAN",
+      "label": "Tungawan"
+    },
+    {
+      "value": "TUPI",
+      "label": "Tupi"
+    },
+    {
+      "value": "TURTLE ISLANDS",
+      "label": "Turtle Islands"
+    },
+    {
+      "value": "TUY",
+      "label": "Tuy"
+    },
+    {
+      "value": "UBAY",
+      "label": "Ubay"
+    },
+    {
+      "value": "UMINGAN",
+      "label": "Umingan"
+    },
+    {
+      "value": "UNGKAYA PUKAN",
+      "label": "Ungkaya Pukan"
+    },
+    {
+      "value": "UNISAN",
+      "label": "Unisan"
+    },
+    {
+      "value": "UPI",
+      "label": "Upi"
+    },
+    {
+      "value": "URBIZTONDO",
+      "label": "Urbiztondo"
+    },
+    {
+      "value": "URDANETA CITY",
+      "label": "Urdaneta City"
+    },
+    {
+      "value": "USON",
+      "label": "Uson"
+    },
+    {
+      "value": "UYUGAN",
+      "label": "Uyugan"
+    },
+    {
+      "value": "VALDERRAMA",
+      "label": "Valderrama"
+    },
+    {
+      "value": "VALENCIA",
+      "label": "Valencia"
+    },
+    {
+      "value": "VALENCIA (LUZURRIAGA)",
+      "label": "Valencia (Luzurriaga)"
+    },
+    {
+      "value": "VALENCIA CITY",
+      "label": "Valencia City"
+    },
+    {
+      "value": "CITY OF VALENZUELA",
+      "label": "Valenzuela"
+    },
+    {
+      "value": "VALLADOLID",
+      "label": "Valladolid"
+    },
+    {
+      "value": "VALLEHERMOSO",
+      "label": "Vallehermoso"
+    },
+    {
+      "value": "VERUELA",
+      "label": "Veruela"
+    },
+    {
+      "value": "VICTORIA",
+      "label": "Victoria"
+    },
+    {
+      "value": "VICTORIAS CITY",
+      "label": "Victorias City"
+    },
+    {
+      "value": "VIGA",
+      "label": "Viga"
+    },
+    {
+      "value": "VIGAN CITY",
+      "label": "Vigan City"
+    },
+    {
+      "value": "VILLABA",
+      "label": "Villaba"
+    },
+    {
+      "value": "VILLANUEVA",
+      "label": "Villanueva"
+    },
+    {
+      "value": "VILLAREAL",
+      "label": "Villareal"
+    },
+    {
+      "value": "VILLASIS",
+      "label": "Villasis"
+    },
+    {
+      "value": "VILLAVERDE",
+      "label": "Villaverde"
+    },
+    {
+      "value": "VILLAVICIOSA",
+      "label": "Villaviciosa"
+    },
+    {
+      "value": "VINCENZO A. SAGUN",
+      "label": "Vincenzo A. Sagun"
+    },
+    {
+      "value": "VINTAR",
+      "label": "Vintar"
+    },
+    {
+      "value": "VINZONS",
+      "label": "Vinzons"
+    },
+    {
+      "value": "VIRAC",
+      "label": "Virac"
+    },
+    {
+      "value": "WAO",
+      "label": "Wao"
+    },
+    {
+      "value": "ZAMBOANGA CITY",
+      "label": "Zamboanga City"
+    },
+    {
+      "value": "ZAMBOANGUITA",
+      "label": "Zamboanguita"
+    },
+    {
+      "value": "ZARAGOZA",
+      "label": "Zaragoza"
+    },
+    {
+      "value": "ZARRAGA",
+      "label": "Zarraga"
+    },
+    {
+      "value": "ZUMARRAGA",
+      "label": "Zumarraga"
+    }
+  ]
+}
