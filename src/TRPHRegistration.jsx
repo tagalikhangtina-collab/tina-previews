@@ -203,6 +203,13 @@ export default function App() {
   const submitApplication = async () => {
     setIsSubmitting(true);
 
+    // ✅ HARD STOP: require Data Privacy consent at final submission
+    if (!consentPrivacy) {
+      alert("You must agree to the Data Privacy Consent to proceed.");
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       const isFeeWaiver = !!formData.feeWaiverRequested;
 
