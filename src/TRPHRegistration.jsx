@@ -170,7 +170,10 @@ export default function App() {
       }
     }
     if (currentStep === 8) {
-      // Step 8 logic is handled by the form submission handler
+      if (!formData.gender) {
+        alert("Please select your gender to proceed.");
+        return;
+      }
       setIsReviewing(true);
       return;
     }
@@ -203,9 +206,16 @@ export default function App() {
   const submitApplication = async () => {
     setIsSubmitting(true);
 
-    // ✅ HARD STOP: require Data Privacy consent at final submission
+    // Privacy hard stop
     if (!consentPrivacy) {
       alert("You must agree to the Data Privacy Consent to proceed.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Gender hard stop
+    if (!formData.gender) {
+      alert("Please select your gender to proceed.");
       setIsSubmitting(false);
       return;
     }
